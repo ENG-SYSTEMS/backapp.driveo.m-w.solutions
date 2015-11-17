@@ -1,0 +1,102 @@
+.buy-page{
+    background: white;
+    background-image: url('../images/bg_tour.jpg');
+    background-size: cover;
+    background-position: 0 54px;
+}
+
+.pack-list  .pack-item {
+  width: 100%;
+  margin-bottom: 0px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.9);
+  border-bottom: 2px solid #e91e63;
+}
+
+.pack-list .x-body{overflow: hidden;}
+
+.pack-search{
+  width: 100%;
+  margin-bottom:5px;
+  position:relative;
+  /*border-bottom: 5px solid #0097A7;*/
+  border-bottom: 5px solid #e91e63;
+  padding:10px 60px 10px 10px;
+  height: 65px;
+}
+.pack-search-container {position: absolute;width: 100%;}
+.valet {overflow:hidden;}
+.pack-search>.fa-crosshairs, .pack-search>.fa-refresh {
+  display: inline-block;
+  top: 0;
+  right: 0px;
+  padding: 17px;
+  position: absolute;
+  font-size: 27px;
+  font-weight: 200;
+}
+.pack-search-address{font-size: 12px;font-weight: 300}
+.pack-search:hover{background-color: #B0BEC5;cursor:pointer}
+
+.pack-search-form{display:none}
+.pack-search-form > form > input {font-size:15px;display:inline-block;float:left;height:30px;margin:5px;padding-left:8px;width:calc(100% - 41px)}
+.pack-search-form > form > button {font-size:20px;display:inline-block;float:right;margin:0px;padding:5px;width:30px;height:40px}
+
+.pack-list {padding-top:5px;}
+.pack-list  .pack-item > .pack-avatar{width:60px;height:60px}
+.valet > h2 {font-weight: 400;font-size: 15px;margin-bottom: 2px}
+.valet > .pack-address{font-size: 12px;font-family: 'Roboto', sans-serif;font-weight: 300;color:#1f1f1f}
+.pack-dist{display: inline-block;float:right;font-weight: 700;color: #fff;padding:2px 5px;line-height: 10px;height:15px;margin-top: 2px}
+.pack-near{background-color: #27AE60;color:#fff}
+.valet > .pack-far{background-color: #F39C12;}
+.valet > .pack-very-far{background-color: #C0392B;}
+.valet > .pack-hours{display: inline-block;float:right;color: #333;}
+.pack-address-big{font-size: 18px;font-family: 'Roboto', sans-serif;font-weight: 300;color:#1f1f1f;line-height: 22px;margin-bottom: 5px}
+
+#pack-history{border-left: 1px solid #90A4AE;display:none}
+.list-header{padding-left: 10px;font-size: 15px;height:25px;line-height: 25px}
+#pack-history .history-course {
+  width: 100%;
+  margin-bottom:0px;
+  position:relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dadada;
+  padding-left: 10px
+}
+
+
+.pack-list .x-list-pullrefresh {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  width: 100%;
+  height: 4.5em;
+}
+
+
+
+.msg-buy {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50%;
+}

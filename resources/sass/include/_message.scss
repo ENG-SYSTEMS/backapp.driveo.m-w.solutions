@@ -1,0 +1,45 @@
+.x-toast {
+    background-color: rgba(0,0,0,0.6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+.x-mask .x-mask-inner{
+  background-color: rgba(0,0,0,0.4);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  min-width: 200px;
+
+}
+.x-mask .x-mask-inner .x-mask-message {
+  margin: 20px;
+  color: white;
+}
+
+.x-mask.x-has-message .x-loading-spinner-outer {
+  height: 168px;
+  background-image: url(/resources/images/loading.gif);
+  background-size: 160px 160px;
+}
+
+.x-list-pullrefresh-message {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 15px 0 0;
+}
+.x-list-pullrefresh-wrap {
+  width: 20em;
+  font-size: 0.8em;
+}
+.x-msgbox .x-toolbar.x-msgbox-title {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,56 @@
+.car-list-page{
+  background-image: url('../images/bg_tour.jpg');
+  background-size: cover;
+  background-position: 0 54px;
+}
+
+.car-list  .car-item, .car-item {
+  width: 100%;
+  margin-bottom: 0px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.9);
+  border-bottom: 2px solid #e91e63;
+}
+.car-item{
+  margin-bottom: 5px;
+}
+
+.car-list .x-list-pullrefresh {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  width: 100%;
+  height: 4.5em;
+}
+
+.car-list .x-body{overflow: hidden;}
+
+.car-item > .valet-avatar{width:60px;height:60px}
+.car-item > h2 {  font-weight: 600;  font-size: 12px;  margin-bottom: 10px;  font-style: italic;}
+.car-item > .valet-address{font-size: 12px;font-family: 'Roboto', sans-serif;font-weight: 300;color:#1f1f1f;  font-style: italic;}
+.valet-dist{display: inline-block;float:right;font-weight: 700;color: #fff;padding:2px 5px;line-height: 10px;height:15px;margin-top: 2px}
+.valet-near{background-color: #27AE60;color:#fff}
+.car-item > .valet-far{background-color: #F39C12;}
+.car-item > .valet-very-far{background-color: #C0392B;}
+.car-item > .valet-hours{display: inline-block;float:right;color: #333;}
+.car-item {overflow: hidden;}
+.valet-address-big{font-size: 18px;font-family: 'Roboto', sans-serif;font-weight: 300;color:#1f1f1f;line-height: 22px;margin-bottom: 5px}
+

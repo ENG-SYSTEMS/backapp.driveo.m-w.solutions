@@ -1,0 +1,64 @@
+.x-picker .x-docked-top{
+    background-color: #263238;
+    box-shadow: 0px 10px 20px 0px #cfcfcf;
+}
+
+.x-picker .x-button {
+  display: inline-block;
+  padding: 10px 20px;
+  transition: all 200ms ease;
+  transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  background-color: #e91e63;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  font-family: 'Open Sans';
+}
+.x-picker .x-button:hover{
+  color: #f4f4f4!important;
+  background-color: #e91e63;
+}
+
+.x-picker .x-dock-body{
+  /*background-color: white;*/
+  background: linear-gradient(#a4a4a4, white, #999);
+}
+.x-picker-item  {
+  /*border-bottom: 1px solid #666;*/
+}
+.x-picker-slot .x-dataview-item {
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+}
+.x-picker-slot .x-dataview-item.x-item-selected {
+  font-weight: bold;
+  background-color: #e91e63;
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+}
+.x-field-select .x-form-label{
+  text-align: right;
+}
+.x-field-select .x-form-label span{
+  color: #1f1f1f;
+  font-size: 14px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.x-selectmark-base, .x-field-select .x-component-outer:after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: auto;
+  right: .7em;
+  -webkit-mask-size: 1em;
+  -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRF…0GI/atC4dQYXRMa1MU0IX4gpWsIIVrGAFK1jBCnYUPwIMAPUPAyFL+nRdAAAAAElFTkSuQmCC');
+  margin-top: -0.5em;
+}

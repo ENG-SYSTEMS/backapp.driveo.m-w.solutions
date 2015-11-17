@@ -1,0 +1,139 @@
+@mixin ypm-button($color) {
+  @include transition(all .25s ease);
+  @include border-radius(6px);
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: $color;
+  border: none;
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.ypm-button {
+  display: inline-block;
+  padding: 10px 20px;
+  transition: all 200ms ease;
+  transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  background-color: #e91e63;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  font-family: 'Open Sans';
+}
+.ypm-button:hover{
+  color: #f4f4f4!important;
+  /*border: 2px solid rgba(255,255,255,0.8);*/
+  background-color: #e91e63;
+}
+
+.ypm-button.block {
+width: 100%;
+display: block;
+margin: 10px auto;
+}
+.ypm-button.large {
+  width: 100%;
+  padding: 8px 20px;
+}
+.ypm-button.big {
+  width: 110px;
+  display: block;
+  margin: 10px 15px;
+  border-radius: 5px;
+}
+.ypm-button.green {
+  background-color: #27AE60;
+}
+
+.inscription {
+  display: inline-block;
+  padding: 0px 23px 8px;
+  transition: all 200ms ease;
+  transform: scale(1,1);
+  color: #fafafa;
+  margin: 5px 0px 0px 10px;
+  background-color: rgba(255,255,255,0);
+  border: 0;
+}
+
+.facebook {
+  margin: 20px 5px 5px 19px;
+  border:0;
+  float:left;
+  background-image: url(../images/Facebooklogo.png);
+}
+.google {
+  margin: 20px 5px 5px 5px;
+  border:0;
+  float:left;
+  background-image: url(../images/Googlelogo.png);
+}
+
+
+
+
+/***** menus toolbar *****/
+.open-socials{
+    float:right;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    font-size:17px;
+    color:#FFFFFF;
+    z-index:1;
+    background-color: rgba(255,255,255,0);
+    border: 0;
+}
+
+.open-socials:hover{
+    background-color:rgba(255,255,255,0.2);
+    color:#FFFFFF;
+}
+
+.button-address-refresh {
+  height: 60px !important;
+  width: 50px;
+  float: right;
+  border: 0;
+  background-color: #263238;
+  color: white;
+  font-size: 2em;
+}
+.button-call-dialer, .button-call-map {
+  /* width: calc(50% - 2px); */
+  border: 0;
+  background-color: transparent;
+  /* color: white; */
+  font-size: 23px;
+  color: #78909C;
+  padding: 0px;
+  margin: 10px 0 0;
+}
+.x-button.button-call-dialer .x-button-label,.x-button.button-call-map .x-button-label{
+  padding:0px;
+}
+.fa-square:before {
+  content: "\f0c8";
+  font-size: 2.8em;
+}
+.fa-phone:before , .fa-map-marker:before{
+  font-size: 1.6em;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  line-height: 2.5em;
+  vertical-align: middle;
+}
+.x-layout-box>.x-layout-box-item.button-call-dialer, .x-layout-box>.x-layout-box-item.button-call-map {
+  display: flex !important;
+}

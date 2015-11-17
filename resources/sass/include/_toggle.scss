@@ -1,0 +1,24 @@
+.x-toggle {
+  border: solid 2px #e91e63;
+  border-radius: 18px;
+  width: 100px;
+  height: 36px;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-color: #e99db7;
+  margin: 7px;
+}
+.x-toggle .x-thumb {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  margin: -2px -2px 0 0;
+  border: solid 2px #e91e63;
+  background-color: #f4f4f4;
+  border-radius: 18px;
+}
+.x-toggle-on {
+    background-color: #85d981;
+}

@@ -1,0 +1,63 @@
+.x-msgbox{
+    padding: 6px;
+    background-color: #f4f4f4;
+}
+
+.x-msgbox-buttons .x-button {
+    display: inline-block;
+    transition: all 200ms ease;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid rgba(255,255,255,0.2);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-family: 'Open Sans';
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+.x-msgbox .x-toolbar.x-docked-bottom {
+  border-top: 0;
+  background-color: transparent;
+}
+.x-msgbox .x-toolbar.x-msgbox-title {
+    height: 65px;
+    width: 100%;
+    display: block;
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    transition: all 350ms ease-in-out;
+    background-color: #455A64;
+    border-bottom: 5px solid #263238;
+}
+.x-msgbox .x-toolbar.x-msgbox-title .x-innerhtml{
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    z-index: 0;
+}
+
+.x-msgbox-text .x-innerhtml {
+  padding: 20px;
+}
+
+/********* POPUP CUSTOM ***********/
+.x-container.x-panel.x-sized.x-floating {
+  background-color: #f4f4f4;
+  border: 5px solid #e91e63;
+  border-radius: 5px;
+}
+.x-panel.x-floating .x-panel-inner {
+  background-color: #f4f4f4;
+}
+
