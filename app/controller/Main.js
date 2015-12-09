@@ -28,6 +28,7 @@ Ext.define('backapp.controller.Main', {
             menuQrcode: '[action=menu-qrcode]',
             loginbutton: '[action=loginbutton]',
             logintext: '[action=logintext]',
+            domaintext: '[action=domaintext]',
             passtext: '[action=passtext]',
             deconnexion: '[action=deconnexion]'
 
@@ -99,14 +100,22 @@ Ext.define('backapp.controller.Main', {
         //verification des champs
         var user = this.getLogintext().getValue();
         var pass = this.getPasstext().getValue();
-        if (user.length&&pass.length) {
+        var domain = this.getDomaintext().getValue();
+        if (domain.length)
+            backapp.utils.Config.setDomain(domain);
+        else {
+            Ext.Msg.alert('Erreur de saisie', 'Veuillez saisir le domaine de votre application.', function(){
+                return true;
+            });
+            curview.setMasked(null);
+        }
+        if (user.length&&pass.length&&domain.length) {
             Ext.Ajax.request({
                 params: {
                     login: user,
                     pass: pass
                 },
                 url: backapp.utils.Config.getLoginUrl(),
-/*                url: backapp.utils.Config.getLoginUrl()+user+'/'+pass+'/'+backapp.utils.Config.getCurrentKey(),*/
                 useDefaultXhrHeader: false,
                 success: function(response, opts) {
                    var obj = Ext.decode(response.responseText);
@@ -133,14 +142,14 @@ Ext.define('backapp.controller.Main', {
                     curview.setMasked(null);
 
                     // Basic alert:
-                    var popup = Ext.Msg.alert('Erreur de connexion', 'Vous ne semblez pas connecté à internet. Si il s\'agit d\'un problème temporaire, pressez "OK" pour réessayer.', function(){
+                    Ext.Msg.alert('Erreur de connexion', 'Vous ne semblez pas connecté à internet. Si il s\'agit d\'un problème temporaire, pressez "OK" pour réessayer.', function(){
                         return true;
                     });
                 }
             });
         }else{
             //un des champs est vide
-            var popup = Ext.Msg.alert('Erreur de saisie', 'Veuillez saisir un identifiant et un mot de passe.', function(){
+            Ext.Msg.alert('Erreur de saisie', 'Veuillez saisir un identifiant et un mot de passe.', function(){
                 return true;
             });
             curview.setMasked(null);

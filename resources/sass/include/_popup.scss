@@ -8,7 +8,7 @@
     transition: all 200ms ease;
     transform: scale(1,1);
     -webkit-transform: scale(1,1);
-    background-color: #e91e63;
+    background-color: #db5555;
     color: #fff;
     font-size: 14px;
     font-weight: 400;
@@ -31,8 +31,8 @@
     background-size: 100px 100px;
     background-repeat: repeat;
     transition: all 350ms ease-in-out;
-    background-color: #455A64;
-    border-bottom: 5px solid #263238;
+    background-color: #16701e;
+    border-bottom: 5px solid #0e4813;
 }
 .x-msgbox .x-toolbar.x-msgbox-title .x-innerhtml{
     font-family: 'Titillium Web', sans-serif;
@@ -54,7 +54,7 @@
 /********* POPUP CUSTOM ***********/
 .x-container.x-panel.x-sized.x-floating {
   background-color: #f4f4f4;
-  border: 5px solid #e91e63;
+  border: 5px solid #db5555;
   border-radius: 5px;
 }
 .x-panel.x-floating .x-panel-inner {

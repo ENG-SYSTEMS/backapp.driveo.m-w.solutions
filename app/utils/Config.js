@@ -3,12 +3,12 @@ Ext.define('backapp.utils.Config', {
     mixins: ['Ext.mixin.Observable'],
     alias : 'utils.Config',
     config : {
-        logkeyUrl: 'http://app.madeinchina.boutique/Systeme/Connexion/getToken.json',
-        loginUrl: 'http://app.madeinchina.boutique/Systeme/Connexion/login.json',
-        checkAlreadyLoggedUrl: 'http://app.madeinchina.boutique/Systeme/Connexion/isLogged.json',
+        logkeyUrl: '/Systeme/Connexion/getToken.json',
+        loginUrl: '/Systeme/Connexion/login.json',
+        checkAlreadyLoggedUrl: '/Systeme/Connexion/isLogged.json',
 
-        venteSaveUrl: 'http://app.madeinchina.boutique/Boutique/Contact/Save.json',
-        produitSaveUrl: 'http://app.madeinchina.boutique/Boutique/Produit/',
+        venteSaveUrl: '/Boutique/Contact/Save.json',
+        produitSaveUrl: '/Boutique/Produit/',
 
         /**
          * user login definition
@@ -16,6 +16,7 @@ Ext.define('backapp.utils.Config', {
         currentKey: '',
         address: 'Adresse en cours d\'acquisition...',
         currentUser: null,
+        domain: null,
         /**
          * views
          */
@@ -37,6 +38,57 @@ Ext.define('backapp.utils.Config', {
     constructor: function(config) {
         this.initConfig(config);
         this.callParent([config]);
+    },
+    /**
+     * applyDomain
+     * Define the domain like it does
+     * @param domain
+     * @returns {string}
+     */
+    applyDomain: function (domain){
+        localStorage.setItem('domain',domain);
+        return 'http://app.'+domain;
+    },
+    /**
+     * getLoginUrl
+     * override getter loginUrl to include domain
+     * @returns {*}
+     */
+    getLoginUrl: function () {
+        console.log('test de login '+this._loginUrl);
+        return this.getDomain()+this._loginUrl;
+    },
+    /**
+     * getLogkeyUrl
+     * override getter _logkeyUrl to include domain
+     * @returns {*}
+     */
+    getLogkeyUrl: function () {
+        return this.getDomain()+this._logkeyUrl;
+    },
+    /**
+     * getCheckAlreadyLoggedUrl
+     * override getter _checkAlreadyLoggedUrl to include domain
+     * @returns {*}
+     */
+    getCheckAlreadyLoggedUrl: function () {
+        return this.getDomain()+this._checkAlreadyLoggedUrl;
+    },
+    /**
+     * getVenteSaveUrl
+     * override getter _checkAlreadyLoggedUrl to include domain
+     * @returns {*}
+     */
+    getVenteSaveUrl: function () {
+        return this.getDomain()+this._venteSaveUrl;
+    },
+    /**
+     * getProduitSaveUrl
+     * override getter produitSaveUrl to include domain
+     * @returns {*}
+     */
+    getProduitSaveUrl: function () {
+        return this.getDomain()+this._produitSaveUrl;
     },
     /***
      * initLocation

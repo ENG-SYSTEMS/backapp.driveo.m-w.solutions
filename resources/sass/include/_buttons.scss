@@ -16,20 +16,20 @@
   transition: all 200ms ease;
   transform: scale(1,1);
   -webkit-transform: scale(1,1);
-  background-color: #e91e63;
+  background-color: #db5555;
   color: #fff;
-  font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   border: 0;
-  /*-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;*/
-  font-family: 'Open Sans';
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.3em;
 }
 .ypm-button:hover{
   color: #f4f4f4!important;
   /*border: 2px solid rgba(255,255,255,0.8);*/
-  background-color: #e91e63;
+  background-color: #db5555;
 }
 
 .ypm-button.block {
@@ -102,7 +102,7 @@ margin: 10px auto;
   width: 50px;
   float: right;
   border: 0;
-  background-color: #263238;
+  background-color: #0e4813;
   color: white;
   font-size: 2em;
 }

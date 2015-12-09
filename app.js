@@ -128,29 +128,31 @@ Ext.application({
     },
     getKey: function () {
         console.log('download key');
-        //Téléchargement de la clef
-        var me = this;
-        Ext.Ajax.request({
-            url: backapp.utils.Config.getLogkeyUrl(),
-            useDefaultXhrHeader: false,
-            success: function(response, opts) {
-               var obj = Ext.decode(response.responseText);
-               backapp.utils.Config.setCurrentKey(obj.logkey);
-               console.log('Récupération de la clef temporaire =>> '+backapp.utils.Config.getCurrentKey());
-               console.dir(obj);
-               
-                //fire event
-                me.fireEvent("onLoginView", this);
-            },
-            failure: function(response, opts) {
-                console.log('Petit problème ' + response.status);
-                // Basic alert:
-                var popup = Ext.Msg.alert('Erreur de connexion', 'Vous ne semblez pas connecté à internet. Si il s\'agit d\'un problème temporaire, pressez "OK" pour réessayer.', function(){
-                    me.getKey();
-                    return true;
-                });
-            }
-         });
+        if (backapp.utils.Config.getDomain()) {
+            //Téléchargement de la clef
+            var me = this;
+            Ext.Ajax.request({
+                url: backapp.utils.Config.getLogkeyUrl(),
+                useDefaultXhrHeader: false,
+                success: function (response, opts) {
+                    var obj = Ext.decode(response.responseText);
+                    backapp.utils.Config.setCurrentKey(obj.logkey);
+                    console.log('Récupération de la clef temporaire =>> ' + backapp.utils.Config.getCurrentKey());
+                    console.dir(obj);
+
+                    //fire event
+                    me.fireEvent("onLoginView", this);
+                },
+                failure: function (response, opts) {
+                    console.log('Petit problème ' + response.status);
+                    // Basic alert:
+                    var popup = Ext.Msg.alert('Erreur de connexion', 'Vous ne semblez pas connecté à internet. Si il s\'agit d\'un problème temporaire, pressez "OK" pour réessayer.', function () {
+                        me.getKey();
+                        return true;
+                    });
+                }
+            });
+        }
     },
     launch: function() {
         if(Ext.picker.Picker){
