@@ -29,11 +29,10 @@ Ext.application({
        /* 'Google',*/
         /*'Facebook',*/
         'Main',
-        'Vente',
         'Produit'
     ],
     views: [
-        'Main','Login','Qrcode','Vente','FicheProduit'
+        'Main','Login','Produit','FicheProduit','Commande','Ordonnance'
     ],
 
     icon: {
@@ -58,9 +57,9 @@ Ext.application({
         '1496x2048': 'resources/startup/1496x2048.png'
     },
     
-    models: ['Produit'],
+    models: ['Produit','Commande','Ordonnance'],
     
-    stores: ['Produits'],
+    stores: ['Produits','Commandes','Ordonnances'],
 
     eventPublishers: {
         touchGesture: {
@@ -265,10 +264,29 @@ Ext.application({
                 user_id: backapp.utils.Config.getCurrentUser().user_id,
                 logkey: backapp.utils.Config.getCurrentKey()
             });
-                
+
             //chargement des store
             produits.load();
 
+            //redefinition du store ORDONNANCES
+            var ordonnances = Ext.getStore('Ordonnances');
+            ordonnances.getProxy().setExtraParams({
+                user_id: backapp.utils.Config.getCurrentUser().user_id,
+                logkey: backapp.utils.Config.getCurrentKey()
+            });
+
+            //chargement des store
+            ordonnances.load();
+
+            //redefinition du store COMMANDES
+            var commandes = Ext.getStore('Commandes');
+            commandes.getProxy().setExtraParams({
+                user_id: backapp.utils.Config.getCurrentUser().user_id,
+                logkey: backapp.utils.Config.getCurrentKey()
+            });
+
+            //chargement des store
+            commandes.load();
         }
     }
 });

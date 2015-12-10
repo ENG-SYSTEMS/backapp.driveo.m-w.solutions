@@ -23,9 +23,10 @@ Ext.define('backapp.controller.Main', {
             addproduit: '[action=addproduit]',
             /*** navigation ***/
             menuMain: '[action=menu-main]',
-            menuContact: '[action=menu-contact]',
-/*            menuParam: '[action=menu-param]',*/
-            menuQrcode: '[action=menu-qrcode]',
+            menuProduit: '[action=menu-produit]',
+            menuCommande: '[action=menu-commande]',
+            menuOrdonnance: '[action=menu-ordonnance]',
+
             loginbutton: '[action=loginbutton]',
             logintext: '[action=logintext]',
             domaintext: '[action=domaintext]',
@@ -57,22 +58,28 @@ Ext.define('backapp.controller.Main', {
                     this.redirectTo('main');
                 }
             },
-            /*menuParam: {
+            menuProduit: {
                 tap: function () {
-                    this.redirectTo('param');
+                    this.redirectTo('produit');
                 }
-            },*/
-            menuContact: {
+            },
+            menuCommande: {
                 tap: function () {
-                    this.redirectTo('contact');
+                    this.redirectTo('commande');
+                }
+            },
+            menuOrdonnance: {
+                tap: function () {
+                    this.redirectTo('ordonnance');
                 }
             }
         },
         routes: {
             /** root cards **/
             'main': 'showMain',
-            'contact': 'showContact',
-            'qrcode': 'showQrCode',
+            'produit': 'showProduit',
+            'commande': 'showCommande',
+            'ordonnance': 'showOrdonnance',
             'login' : 'showLogin',
             'product/:id': 'showProduct',
             'product/add': 'addProduct',
@@ -252,17 +259,17 @@ Ext.define('backapp.controller.Main', {
         if (curview)
             curview.setMasked(false);
     },
-    showContact: function () {
+    showProduit: function () {
         backapp.utils.Config.hideMenu();
-        this.manageView(1,'backapp.view.Vente');
+        this.manageView(1,'backapp.view.Produit');
     },
-    showQrCode: function () {
+    showCommande: function () {
         backapp.utils.Config.hideMenu();
-        this.manageView(1,'backapp.view.Qrcode');
+        this.manageView(1,'backapp.view.Commande');
     },
-    showParametres: function () {
+    showOrdonnance: function () {
         backapp.utils.Config.hideMenu();
-        this.manageView(0,'backapp.view.Parametres');
+        this.manageView(1,'backapp.view.Ordonnance');
     },
     showProduct: function (id) {
         var ficheview = Ext.create('backapp.view.FicheProduit');

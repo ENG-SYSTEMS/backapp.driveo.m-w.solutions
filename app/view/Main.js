@@ -8,8 +8,7 @@ Ext.define('backapp.view.Main', {
         'Ext.tab.Panel',
         'Ext.Menu',
         'Ext.Anim',
-        'Ext.util.Geolocation',
-        'backapp.form.Profil'
+        'Ext.util.Geolocation'
     ],
     id: 'mainCard',
     config: {
@@ -23,7 +22,7 @@ Ext.define('backapp.view.Main', {
             {
                xtype: 'toolbar',
                docked: 'top',
-               title: 'Liste des produits',
+               title: 'Tableau de bord',
                cls: 'header',
                items: [
                     {
@@ -37,94 +36,19 @@ Ext.define('backapp.view.Main', {
                     },
                     {
                         xtype: 'spacer'
-                    },
-                   {
-                       xtype: 'button',
-                       text: '',
-                       iconCls: 'fa fa-plus',
-                       action: 'addproduit',
-                       cls: 'open-socials'
-                   }
+                    }
                 ]
-            }/*,
-            {
-                xtype: 'toolbar',
-                action:'credit-display',
-                docked: 'bottom',
-                title: backapp.utils.Config.getCreditString(),
-                cls: 'footer'
-            }*/,
+            },
            {
                 align: 'center',
                 items:[
-                    {
-                        title: 'Accueil',
-                        style: 'overflow:hidden',
-                        iconCls: 'home',
-                        width: '100%',
-                        height: '100%',
-                        xtype: 'list',
-                        store: 'Produits',
-                        cls: 'product-list',
-                        infinite: false,
-                        action: 'listeproduit',
-                        itemTpl: '<div class="product">'+
-                        '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
-                        '<span class="product-dist product-near">{backappReference} pièces</span>'+
-                        '<h2>{Nom} ({Reference})</h2>'+
-                        '<span class="product-hours">{TarifText}</span>'+
-                            /*'<span class="valet-address">Poids: {Poids}<br />Largeur: {Largeur} <br />Hauteur: {Hauteur} <br /> Profondeur: {Profondeur}</span>'+*/
-                        '</div>',
-                        grouped: false,
-                        pinHeaders: false,
-                        plugins: [
-                            {
-                                xclass: 'Ext.plugin.ListPaging',
-                                autoPaging: true,
-                                showAnimation: 'slideIn',
-                                loadMoreText: 'Chargement...',
-                                noMoreRecordsText: 'Pas plus d\'enregistrements'
-                            },
-                            {
-                                xclass: 'Ext.plugin.PullRefresh',
-                                pullText: 'Glissez vers le bas pour rafraichir.',
-                                releaseText:'Relachez pour rafraichir.',
-                                loadingText: 'Chargement en cours ...',
-                                loadedText: 'Chargement reussi.',
-                                lastUpdatedText: 'Mise à jour:  ',
-                                listeners : {
-                                    latestfetched: function () {
-                                        console.log('refresh list');
-                                        this.getList().getStore().currentPage = 1;
-                                        this.getList().getStore().removeAll();
-                                        this.getList().getStore().load();
-                                    }
-                                }
-                            }
 
-                        ]
-                    }
                 ]
             }
 
         ],
         listeners: {
             initialize: function(item){
-                //initialisation de l'ecouteur pour les adresses
-                /*var me = this;
-                backapp.utils.Config.addListener('locationUpdate',function () {
-                    console.log('location update ',backapp.utils.Config.getAddress());
-                    me.updateAddress(backapp.utils.Config.getAddress());
-                });
-                me.updateAddress(backapp.utils.Config.getAddress());*/
-
-                //ecouteur nombre de crédits
-                /*backapp.utils.Config.addListener('creditupdate',function () {
-                    console.log('credit update ',backapp.utils.Config.getCreditString());
-                    me.updateCredit(backapp.utils.Config.getCreditString());
-                });
-                me.updateCredit(backapp.utils.Config.getCreditString());*/
-
 
                 //initialisation du menu
                 var leftmenu = Ext.create('Ext.Panel', {
@@ -153,21 +77,27 @@ Ext.define('backapp.view.Main', {
                                 {
                                     cls: 'menu-item',
                                     action: 'menu-main',
-                                    html: '<i class="fa fa-crosshairs"></i>' +
+                                    html: '<i class="fa fa-tablet"></i>' +
+                                    '<strong>Tableau de bord</strong>'
+                                },
+                                {
+                                    cls: 'menu-item',
+                                    action: 'menu-produit',
+                                    html: '<i class="fa fa-list"></i>' +
                                     '<strong>Liste des produits</strong>'
                                 },
                                 {
                                     cls: 'menu-item',
-                                    action: 'menu-contact',
-                                    html: '<i class="fa fa-list"></i>' +
-                                    '<strong>Nouvelle vente</strong>'
-                                }/*,
+                                    action: 'menu-commande',
+                                    html: '<i class="fa fa-shopping-cart"></i>' +
+                                    '<strong>Liste des commandes</strong>'
+                                },
                                 {
                                     cls: 'menu-item',
-                                    action: 'menu-param',
-                                    html: '<i class="fa fa-cogs"></i>' +
-                                    '<strong>Paramètres</strong>'
-                                }*/,
+                                    action: 'menu-ordonnance',
+                                    html: '<i class="fa fa-pagelines"></i>' +
+                                    '<strong>Liste des ordonnances</strong>'
+                                },
                                 {
                                     cls: 'menu-item',
                                     action: 'deconnexion',
@@ -196,19 +126,5 @@ Ext.define('backapp.view.Main', {
                 backapp.utils.Config.showMenu();
             }
         }
-    }/*,
-    updateAddress: function (address){
-
-        //mise à jour de l'adresse
-        var addr =
-            '<div class="valet-search m-bluegrey-bg-100 m-bluegrey-borderb-400">'+
-            '<span class="valet-search-address">'+backapp.utils.Config.getAddress()+'</span>'+
-            '</div>';
-        this.down('[action=address-display]').setHtml(addr);
-    },
-    updateCredit: function (address){
-
-        //mise à jour du nombre de crédits
-        this.down('[action=credit-display]').setTitle(address);
-    }*/
+    }
 });

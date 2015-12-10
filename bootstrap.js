@@ -792,7 +792,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "backapp.form.Profil": [],
   "backapp.form.Registration": [],
   "backapp.form.Vente": [],
+  "backapp.model.Car": [],
+  "backapp.model.Course": [],
+  "backapp.model.Lieu": [],
   "backapp.model.Produit": [],
+  "backapp.model.Valet": [],
   "backapp.store.Cars": [],
   "backapp.store.Courses": [],
   "backapp.store.Lieux": [],
@@ -1791,7 +1795,11 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.form.Vente": [
     "widget.formVente"
   ],
+  "backapp.model.Car": [],
+  "backapp.model.Course": [],
+  "backapp.model.Lieu": [],
   "backapp.model.Produit": [],
+  "backapp.model.Valet": [],
   "backapp.store.Cars": [
     "store.Cars"
   ],
