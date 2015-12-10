@@ -41,13 +41,25 @@ Ext.define('backapp.utils.Config', {
     },
     /**
      * applyDomain
-     * Define the domain like it does
+     * Define the domain before the setter
      * @param domain
      * @returns {string}
      */
     applyDomain: function (domain){
         localStorage.setItem('domain',domain);
         return 'http://app.'+domain;
+    },
+    /**
+     * getDomain
+     * @returns {*}
+     */
+    getDomain: function () {
+        if (!this._domain){
+            var domainStore = localStorage.getItem('domain');
+            if (domainStore)
+                this._domain = 'http://app.'+domainStore;
+        }
+        return this._domain;
     },
     /**
      * getLoginUrl

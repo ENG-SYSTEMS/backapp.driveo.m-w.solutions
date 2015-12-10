@@ -69,7 +69,7 @@ Ext.define('backapp.view.Main', {
                         infinite: false,
                         action: 'listeproduit',
                         itemTpl: '<div class="product">'+
-                        '<img src="http://admin.madeinchina.boutique/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
+                        '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
                         '<span class="product-dist product-near">{backappReference} pièces</span>'+
                         '<h2>{Nom} ({Reference})</h2>'+
                         '<span class="product-hours">{TarifText}</span>'+

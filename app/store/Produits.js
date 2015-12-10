@@ -9,10 +9,10 @@ Ext.define("backapp.store.Produits", {
             type: 'ajax',
             useDefaultXhrHeader: false,
             api: {
-                create: 'http://app.madeinchina.boutique/Boutique/Produit/getData.json',
-                read: 'http://app.madeinchina.boutique/Boutique/Produit/getData.json',
-                update: 'http://app.madeinchina.boutique/Boutique/Produit/getData.json',
-                destroy: 'http://app.madeinchina.boutique/Boutique/Produit/deleteData.json'
+                create: backapp.utils.Config.getDomain()+'/Boutique/Produit/getData.json',
+                read: backapp.utils.Config.getDomain()+'/Boutique/Produit/getData.json',
+                update: backapp.utils.Config.getDomain()+'/Boutique/Produit/getData.json',
+                destroy: backapp.utils.Config.getDomain()+'/Boutique/Produit/deleteData.json'
             },
             actionMethods: {
                 create : 'POST',

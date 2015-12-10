@@ -198,7 +198,7 @@ Ext.define('backapp.form.Produit', {
     setRecord: function (record){
         if (this.down('[name=Image]')) {
             this.down('[name=Image]').setValue(record.get('Image'));
-            this.down('[action=produitImage]').setSrc('http://app.madeinchina.boutique/'+record.get('Image')+'.mini.100x100.jpg');
+            this.down('[action=produitImage]').setSrc(backapp.utils.Config.getDomain()+'/'+record.get('Image')+'.mini.100x100.jpg');
         }
         if (this.down('[name=Nom]'))
             this.down('[name=Nom]').setValue(record.get('Nom'));
