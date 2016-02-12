@@ -786,23 +786,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "backapp.controller.Google": [],
   "backapp.controller.Main": [],
   "backapp.controller.Produit": [],
-  "backapp.controller.Vente": [],
-  "backapp.form.Course": [],
   "backapp.form.Produit": [],
-  "backapp.form.Profil": [],
-  "backapp.form.Registration": [],
-  "backapp.form.Vente": [],
-  "backapp.model.Car": [],
-  "backapp.model.Course": [],
-  "backapp.model.Lieu": [],
+  "backapp.model.Commande": [],
+  "backapp.model.Ordonnance": [],
   "backapp.model.Produit": [],
-  "backapp.model.Valet": [],
-  "backapp.store.Cars": [],
-  "backapp.store.Courses": [],
-  "backapp.store.Lieux": [],
-  "backapp.store.OpenCourses": [],
+  "backapp.store.Commandes": [],
+  "backapp.store.Ordonnances": [],
   "backapp.store.Produits": [],
-  "backapp.store.Valets": [],
   "backapp.utils.AutoComplete": [],
   "backapp.utils.Config": [],
   "backapp.utils.DataViewYpm": [],
@@ -812,12 +802,12 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "backapp.utils.TimePicker": [],
   "backapp.utils.TimePickerField": [],
+  "backapp.view.Commande": [],
   "backapp.view.FicheProduit": [],
-  "backapp.view.Historique": [],
   "backapp.view.Login": [],
   "backapp.view.Main": [],
-  "backapp.view.Qrcode": [],
-  "backapp.view.Vente": []
+  "backapp.view.Ordonnance": [],
+  "backapp.view.Produit": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1779,44 +1769,20 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.controller.Google": [],
   "backapp.controller.Main": [],
   "backapp.controller.Produit": [],
-  "backapp.controller.Vente": [],
-  "backapp.form.Course": [
-    "widget.formCourse"
-  ],
   "backapp.form.Produit": [
     "widget.formProduit"
   ],
-  "backapp.form.Profil": [
-    "widget.formProfil"
-  ],
-  "backapp.form.Registration": [
-    "widget.registration"
-  ],
-  "backapp.form.Vente": [
-    "widget.formVente"
-  ],
-  "backapp.model.Car": [],
-  "backapp.model.Course": [],
-  "backapp.model.Lieu": [],
+  "backapp.model.Commande": [],
+  "backapp.model.Ordonnance": [],
   "backapp.model.Produit": [],
-  "backapp.model.Valet": [],
-  "backapp.store.Cars": [
-    "store.Cars"
+  "backapp.store.Commandes": [
+    "store.Commande"
   ],
-  "backapp.store.Courses": [
-    "store.Courses"
-  ],
-  "backapp.store.Lieux": [
-    "store.Lieux"
-  ],
-  "backapp.store.OpenCourses": [
-    "store.OpenCourses"
+  "backapp.store.Ordonnances": [
+    "store.Ordonnances"
   ],
   "backapp.store.Produits": [
     "store.Produits"
-  ],
-  "backapp.store.Valets": [
-    "store.Valets"
   ],
   "backapp.utils.AutoComplete": [
     "widget.autocompletefield"
@@ -1839,11 +1805,11 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.utils.TimePickerField": [
     "widget.timepickerfield"
   ],
+  "backapp.view.Commande": [
+    "widget.commande"
+  ],
   "backapp.view.FicheProduit": [
     "widget.main"
-  ],
-  "backapp.view.Historique": [
-    "widget.histo"
   ],
   "backapp.view.Login": [
     "widget.login"
@@ -1851,11 +1817,11 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.view.Main": [
     "widget.main"
   ],
-  "backapp.view.Qrcode": [
-    "widget.qrcode"
+  "backapp.view.Ordonnance": [
+    "widget.ordonnance"
   ],
-  "backapp.view.Vente": [
-    "widget.vente"
+  "backapp.view.Produit": [
+    "widget.produit"
   ]
 });
 

@@ -42,7 +42,6 @@ Ext.define('backapp.view.Main', {
            {
                 align: 'center',
                 items:[
-
                 ]
             }
 
