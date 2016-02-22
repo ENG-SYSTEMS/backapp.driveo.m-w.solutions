@@ -1,3 +1,7 @@
+/*
+violet: #8d188f
+vert: #80cc28
+*/
 .header{
     height: 61px;
     width: 100%;
@@ -8,16 +12,14 @@
     position:relative;
     z-index: 999999;
     transition: all 350ms ease-in-out;
-  /*  background-color: #16701e;*/
-  background-color: #0e4813;
+  /*  background-color: #8d188f;*/
+    background-color: #8d188f;
 
-    border-left: solid 1px rgba(255,255,255,0.05);
-    border-bottom: 5px solid #db5555;
-    border-right: solid 1px rgba(255,255,255,0.05);
+/*    border-left: solid 1px rgba(255,255,255,0.05);
+    border-right: solid 1px rgba(255,255,255,0.05);*/
 }
 .x-toolbar.x-docked-top {
-    border-bottom: 5px solid #db5555;
-    
+  box-shadow: 0 0 10px #666;
 }
 .header .x-innerhtml{
     font-family: 'Titillium Web', sans-serif;
@@ -27,7 +29,11 @@
     text-align: center;
     height: 60px;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     z-index: 0;
+}
+.header.top{
+  background-color: #3E4144;
+  border-bottom: 5px solid #80cc28;
 }

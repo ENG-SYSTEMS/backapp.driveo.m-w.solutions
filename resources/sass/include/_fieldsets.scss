@@ -1,6 +1,7 @@
 .x-form-fieldset .x-form-fieldset-inner {
     border: 0;
-    overflow: hidden;
+ /*   overflow: hidden;*/
+  overflow: inherit;
 }
 
 .x-form-label{

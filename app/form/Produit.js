@@ -119,7 +119,13 @@ Ext.define('backapp.form.Produit', {
                         placeHolder: 'Tarif HT',
                         autoCapitalize: false,
                         required      : 1
-                    },
+                    }/*,
+                    {
+                        xtype: 'togglefield',
+                        name: 'pdaPrepare',
+                        label: 'Saouhaitez-vous une préparation PDA ?',
+                        labelWidth: '60%'
+                    }*/,
                     {
                         xtype         : 'textareafield',
                         name : 'Commentaire',

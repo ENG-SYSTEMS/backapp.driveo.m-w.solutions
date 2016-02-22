@@ -7,7 +7,7 @@ Ext.define('backapp.view.FicheProduit', {
         'backapp.form.Produit'
     ],
     config: {
-        cls: 'produit-page',
+        cls: 'product-list-page',
         layout: {
             type: 'card',
             align: 'center'

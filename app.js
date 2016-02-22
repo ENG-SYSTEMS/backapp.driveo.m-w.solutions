@@ -23,16 +23,21 @@ Ext.application({
         'Ext.Toast',
         'backapp.utils.TimePickerField',
         'backapp.utils.TimePicker',
-        'Ext.Date'
+        'Ext.Date',
+        'backapp.utils.PinchZoomImage',
+        'Ext.field.Hidden'
     ],
     controllers: [
        /* 'Google',*/
         /*'Facebook',*/
         'Main',
-        'Produit'
+        'Produit',
+        'Commande',
+        'Ordonnance',
+        'FullScreen'
     ],
     views: [
-        'Main','Login','Produit','FicheProduit','Commande','Ordonnance'
+        'Main','Login','Produit','FicheProduit','Commande','Ordonnance', 'FicheCommande', 'FicheOrdonnance'
     ],
 
     icon: {
@@ -57,9 +62,9 @@ Ext.application({
         '1496x2048': 'resources/startup/1496x2048.png'
     },
     
-    models: ['Produit','Commande','Ordonnance'],
+    models: ['Produit','Commande','Ordonnance','LigneCommande'],
     
-    stores: ['Produits','Commandes','Ordonnances'],
+    stores: ['Produits','Commandes','Ordonnances','DetailCommande'],
 
     eventPublishers: {
         touchGesture: {
@@ -236,6 +241,7 @@ Ext.application({
             
         },
         onLoginSuccess: function () {
+            var me = this;
             console.log('login success');
 
             //backappage de la clef et du user_id
@@ -287,6 +293,79 @@ Ext.application({
 
             //chargement des store
             commandes.load();
+
+            //initialisation du push
+            // SERVER API KEY: AIzaSyCGGUR9EbkicdM7IUXp1l-Z2sHFQCnLp-A
+            // SENDER ID :  707623212110
+            var push = PushNotification.init({
+                android: {
+                    senderID: "707623212110"
+                },
+                ios: {
+                    alert: "true",
+                    badge: "true",
+                    sound: "true"
+                },
+                windows: {}
+            });
+
+            push.on('registration', function(data) {
+                console.log('registration id '+data.registrationId);
+                //envoi du register id au server
+                var url = backapp.utils.Config.getDomain()+'/Pharmacie/Device/registerDevice.json';
+                Ext.Ajax.request({
+                    url: url,
+                    useDefaultXhrHeader: false,
+                    params:{
+                      KEY:  data.registrationId
+                    },
+                    success: function (response, opts) {
+                        console.log('Définition du register Id OK');
+                    },
+                    failure: function (response, opts) {
+                        console.log('Petit problème ' + response.status);
+                        // Basic alert:
+                        var popup = Ext.Msg.alert('Erreur de connexion', 'Vous ne semblez pas connecté à internet. Si il s\'agit d\'un problème temporaire, pressez "OK" pour réessayer.', function () {
+                        });
+                    }
+                });
+            });
+
+            push.on('notification', function(data) {
+                console.log('receive notification',data)
+
+                //declenche une notification local
+                var sound = device.platform == 'Android' ? 'file://sound.mp3' : 'file://beep.caf';
+                var date = new Date();
+
+                cordova.plugins.notification.local.schedule({
+                    id: 1,
+                    title: data.title,
+                    message: data.message,
+                    firstAt: date,
+                    sound: sound,
+                    icon: "http://domain.com/icon.png"
+                });
+
+                //on rafraichit également le store correspondant
+                switch (data.additionalData.store){
+                    case "Commandes":
+                        var st = Ext.getStore('Commandes');
+                        st.load();
+                        me.redirectTo('commande')
+                        break;
+                    case "Ordonnances":
+                        var st = Ext.getStore('Ordonnances');
+                        st.load();
+                        me.redirectTo('ordonnance')
+                        break;
+                }
+            });
+
+            push.on('error', function(e) {
+                console.log('receive notification error', e.message);
+                // e.message
+            });
         }
     }
 });

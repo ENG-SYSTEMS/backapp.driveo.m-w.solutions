@@ -63,12 +63,12 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x:hidden;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: sans-serif;*/
 	-webkit-font-smoothing: antialiased;
 	color: #666;
   background-image: url(../images/cuir.jpg);
 	font-size: 12px;
-	line-height: 12px;
+	line-height: 16px;
   background-color: #666;
 }
 
@@ -93,14 +93,15 @@ h1{
 	font-size:21px;
 	margin-bottom:10px;
 	font-weight:800;
-	color:#212935;
+	color:#333;
 }
 
 h2{
 	font-size:16px;
 	margin-bottom:5px;
 	font-weight:800;
-	color:#212935;
+	color:#333;
+    line-height: 1.2em;
 }
 
 h3{
@@ -108,18 +109,18 @@ h3{
     margin-top:10px;
     margin-bottom:5px;
 	font-weight:bold;
-	color:#212935
+	color:#333
 }
 
 h4{
 	font-size:15px;
 	margin-bottom:10px;
 	font-weight:500;
-	color:#212935;
+	color:#333;
 }
 
 h5{
-	color:#212935;
+	color:#333;
 	font-size:13px;
 	margin-bottom:5px;
 	font-weight:500;
@@ -141,9 +142,29 @@ hr{
 }
 
 p{
-  text-align: justify;
+  text-align: left;
+  font-size: 14px;
 }
-
+/**** STATUS *****/
+.label{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #EA5A8F;
+  color: #333;
+  font-size: 12px;
+}
+.success {
+  background-color: #80cc28 !important;
+  color: #fff !important;
+}
+.warning{
+  background-color: #EA5A8F !important;
+  color: #fff !important;
+}
+.danger{
+  background-color: #8d188f !important;
+  color: #fff !important;
+}
 
 /***** awesome-fonts.css ******/
 
@@ -1726,4 +1747,7 @@ font-family: "FontAwesome";
 }
 .fa-bomb:before {
   content: "\f1e2";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
 }

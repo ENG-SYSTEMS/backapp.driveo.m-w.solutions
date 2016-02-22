@@ -9,6 +9,8 @@ Ext.define('backapp.utils.Config', {
 
         venteSaveUrl: '/Boutique/Contact/Save.json',
         produitSaveUrl: '/Boutique/Produit/',
+        commandeManageUrl: '/Boutique/Commande/',
+        ordonnanceManageUrl: '/Pharmacie/Ordonnance/',
 
         /**
          * user login definition
@@ -101,6 +103,22 @@ Ext.define('backapp.utils.Config', {
      */
     getProduitSaveUrl: function () {
         return this.getDomain()+this._produitSaveUrl;
+    },
+    /**
+     * getCommandeManageUrl
+     * override getter getCommandeManageUrl to include domain
+     * @returns {*}
+     */
+    getCommandeManageUrl: function () {
+        return this.getDomain()+this._commandeManageUrl;
+    },
+    /**
+     * getOrdonnanceManageUrl
+     * override getter OrdonnanceManageUrl to include domain
+     * @returns {*}
+     */
+    getOrdonnanceManageUrl: function () {
+        return this.getDomain()+this._ordonnanceManageUrl;
     },
     /***
      * initLocation

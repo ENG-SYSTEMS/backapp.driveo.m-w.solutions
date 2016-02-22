@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-barcodescanner": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "backapp.driveo.m_w.solutions"
+        }
+    }
+}

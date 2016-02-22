@@ -26,6 +26,7 @@ Ext.define('backapp.controller.Main', {
             menuProduit: '[action=menu-produit]',
             menuCommande: '[action=menu-commande]',
             menuOrdonnance: '[action=menu-ordonnance]',
+            menuNewOrdonnance: '[action=menu-photo-ordonnance]',
 
             loginbutton: '[action=loginbutton]',
             logintext: '[action=logintext]',
@@ -37,7 +38,7 @@ Ext.define('backapp.controller.Main', {
 
         control: {
             closeMenu: {
-                tap: 'onCloseMenu'  
+                tap: 'onCloseMenu'
             },
             addproduit: {
                 tap: function () {
@@ -68,6 +69,11 @@ Ext.define('backapp.controller.Main', {
                     this.redirectTo('commande');
                 }
             },
+            menuNewOrdonnance: {
+                tap: function () {
+                    this.redirectTo('new-ordonnance');
+                }
+            },
             menuOrdonnance: {
                 tap: function () {
                     this.redirectTo('ordonnance');
@@ -79,14 +85,19 @@ Ext.define('backapp.controller.Main', {
             'main': 'showMain',
             'produit': 'showProduit',
             'commande': 'showCommande',
+            'commande/:id': 'showFicheCommande',
             'ordonnance': 'showOrdonnance',
+            'ordonnance/:id': 'showFicheOrdonnance',
+            'new-ordonnance': 'showNewOrdonnance',
             'login' : 'showLogin',
             'product/:id': 'showProduct',
             'product/add': 'addProduct',
-            'param' : 'showParametres'
+            'param' : 'showParametres',
+            'registration' : 'showRegistration',
+            'resetpassword' : 'showResetPassword'
         }
     },
-     /***************************
+    /***************************
      * CONNEXION / DECONNEXION
      ***************************/
     onDeconnexion: function () {
@@ -101,22 +112,19 @@ Ext.define('backapp.controller.Main', {
         curview.setMasked({
             xtype: 'loadmaskypm',
             indicator: false/*
-            message: 'Vérification des données utilisateurs ...'*/
+             message: 'Vérification des données utilisateurs ...'*/
         });
         var me = this;
         //verification des champs
         var user = this.getLogintext().getValue();
         var pass = this.getPasstext().getValue();
         var domain = this.getDomaintext().getValue();
-        if (domain.length)
+        if (domain){
             backapp.utils.Config.setDomain(domain);
-        else {
-            Ext.Msg.alert('Erreur de saisie', 'Veuillez saisir le domaine de votre application.', function(){
-                return true;
-            });
-            curview.setMasked(null);
         }
+
         if (user.length&&pass.length&&domain.length) {
+            //definition du domaine
             Ext.Ajax.request({
                 params: {
                     login: user,
@@ -125,21 +133,21 @@ Ext.define('backapp.controller.Main', {
                 url: backapp.utils.Config.getLoginUrl(),
                 useDefaultXhrHeader: false,
                 success: function(response, opts) {
-                   var obj = Ext.decode(response.responseText);
-                   console.log('Récupération de la donnée utilisateur');
+                    var obj = Ext.decode(response.responseText);
+                    console.log('Récupération de la donnée utilisateur');
 
-                   //suppresion de la page de chargement
-                   curview.setMasked(null);
+                    //suppresion de la page de chargement
+                    curview.setMasked(null);
 
-                   //test de la réponse
-                   if (obj.success) {
+                    //test de la réponse
+                    if (obj.success) {
                         console.log('Utilisateur connecté', obj);
                         backapp.utils.Config.setCurrentKey(obj.logtoken);
                         backapp.utils.Config.setCurrentUser(obj);
                         backapp.utils.Config.getApp().fireEvent('onLoginSuccess',this);
-                   }else{
+                    }else{
                         var popup = Ext.Msg.alert('Erreur', obj.msg);
-                   }
+                    }
 
                 },
                 failure: function(response, opts) {
@@ -189,12 +197,14 @@ Ext.define('backapp.controller.Main', {
         this.redirectTo('produit/add');
     },
     _indexViews: [],
+    _currentView: null,
     _currentLevel: 0,
     manageView: function (level,name_view) {
-        console.log('---- show view ----', name_view,'level',level);
-
         //redirection accueil si pas de clef
-        if (!backapp.utils.Config.getCurrentKey()&& name_view!='backapp.view.Login') {
+        if (name_view==this._currentView){
+            console.log('meme vue. exit');
+            return this._indexViews[name_view];
+        }else if (!backapp.utils.Config.getCurrentKey()&&name_view!='backapp.view.Login'&&name_view=='backapp.form.Registration') {
             console.log('perte de clef... attente...');
             //_____________________________________________________________________________________________________________
             //                                                                                                  ANIMATIONS
@@ -209,6 +219,8 @@ Ext.define('backapp.controller.Main', {
             console.log('interdit ya une clef mais la vue est login ou registration et pas de user');
             return;
         }
+        console.log('---- show view ----', name_view,'level',level);
+
 
         var commview;
 
@@ -219,19 +231,19 @@ Ext.define('backapp.controller.Main', {
                 //                                                                                                  ANIMATIONS
                 Ext.Viewport.getLayout().setAnimation({type: 'slide', direction: 'right'});
                 //_____________________________________________________________________________________________________________
-            break;
+                break;
             case -1:
                 //_____________________________________________________________________________________________________________
                 //                                                                                                  ANIMATIONS
                 Ext.Viewport.getLayout().setAnimation({type: 'slide', direction: 'left'});
                 //_____________________________________________________________________________________________________________
-            break;
+                break;
             default:
                 //_____________________________________________________________________________________________________________
                 //                                                                                                  ANIMATIONS
                 Ext.Viewport.getLayout().setAnimation({type: 'fade', direction: 'left'});
                 //____________________________________________________________________________________________________________
-            break;
+                break;
         }
 
         //maintenance de l'index des vues chargées
@@ -241,6 +253,7 @@ Ext.define('backapp.controller.Main', {
         }else{
             this._indexViews[name_view] = commview = Ext.create(name_view);
         }
+        this._currentView=name_view;
         Ext.Viewport.setActiveItem(commview);
         this._currentLevel=level;
 
@@ -263,28 +276,43 @@ Ext.define('backapp.controller.Main', {
         backapp.utils.Config.hideMenu();
         this.manageView(1,'backapp.view.Produit');
     },
+    showRegistration: function () {
+        backapp.utils.Config.hideMenu();
+        this.manageView(1,'backapp.view.Registration');
+    },
+    showResetPassword: function () {
+        backapp.utils.Config.hideMenu();
+        this.manageView(1,'backapp.view.ResetPassword');
+    },
     showCommande: function () {
         backapp.utils.Config.hideMenu();
         this.manageView(1,'backapp.view.Commande');
+    },
+    showFicheCommande: function (id) {
+        var ficheview = this.manageView(2,'backapp.view.FicheCommande');
+        var comStore = Ext.getStore('Commandes');
+        var record = comStore.getById(id);
+        ficheview.setRecord(record);
     },
     showOrdonnance: function () {
         backapp.utils.Config.hideMenu();
         this.manageView(1,'backapp.view.Ordonnance');
     },
-    showProduct: function (id) {
-        var ficheview = Ext.create('backapp.view.FicheProduit');
-        Ext.Viewport.setActiveItem(ficheview);
-        this._currentLevel = 1;
-        var valetStore = Ext.getStore('Produits');
-        var record = valetStore.getById(id);
+    showNewOrdonnance: function () {
+        backapp.utils.Config.hideMenu();
+        this.manageView(1,'backapp.view.EnvoyerOrdonnance');
+    },
+    showFicheOrdonnance: function (id) {
+        var ficheview = this.manageView(2,'backapp.view.FicheOrdonnance');
+        var ordoStore = Ext.getStore('Ordonnances');
+        var record = ordoStore.getById(id);
         ficheview.setRecord(record);
     },
-    addProduct: function () {
-        var ficheview = Ext.create('backapp.view.FicheProduit');
-        Ext.Viewport.setActiveItem(ficheview);
-        this._currentLevel = 1;
-/*        var valetStore = Ext.getStore('Produits');
-        var record = valetStore.get
-        ficheview.setRecord(record);*/
+    showProduct: function (id) {
+        var ficheview = this.manageView(2,'backapp.view.FicheProduit');
+        var valetStore = Ext.getStore('Produits');
+        var record = valetStore.getById(id);
+        if (ficheview)
+            ficheview.setRecord(record);
     }
- });
+});

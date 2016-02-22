@@ -7,12 +7,7 @@
 // Views
 @import 'include/login';
 @import 'include/product_list';
-/*@import 'include/valet_profile';
-@import 'include/qrcode';
-@import 'include/buy';
-@import 'include/client_registration';
-@import 'include/histo_commentaire';
-@import 'include/car_list';*/
+@import 'include/product';
 
 // Components
 @import 'include/body';
@@ -29,6 +24,10 @@
 @import 'include/autoComplete';
 @import 'include/loading';
 @import 'include/scroll_container';
+@import 'include/panel';
+@import 'include/search';
+@import 'include/dropdownmenu';
+@import 'include/toast';
 // Structure
 @import 'include/footer';
 

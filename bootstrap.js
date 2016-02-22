@@ -638,17 +638,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -782,27 +771,36 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "backapp.controller.Commande": [],
   "backapp.controller.Facebook": [],
+  "backapp.controller.FullScreen": [],
   "backapp.controller.Google": [],
   "backapp.controller.Main": [],
+  "backapp.controller.Ordonnance": [],
   "backapp.controller.Produit": [],
   "backapp.form.Produit": [],
   "backapp.model.Commande": [],
+  "backapp.model.LigneCommande": [],
   "backapp.model.Ordonnance": [],
   "backapp.model.Produit": [],
   "backapp.store.Commandes": [],
+  "backapp.store.DetailCommande": [],
   "backapp.store.Ordonnances": [],
   "backapp.store.Produits": [],
   "backapp.utils.AutoComplete": [],
   "backapp.utils.Config": [],
   "backapp.utils.DataViewYpm": [],
   "backapp.utils.LoadMaskCustom": [],
+  "backapp.utils.PinchZoomImage": [],
   "backapp.utils.Slot": [
     "Ext.Picker.Slot"
   ],
   "backapp.utils.TimePicker": [],
   "backapp.utils.TimePickerField": [],
+  "backapp.utils.Transform": [],
   "backapp.view.Commande": [],
+  "backapp.view.FicheCommande": [],
+  "backapp.view.FicheOrdonnance": [],
   "backapp.view.FicheProduit": [],
   "backapp.view.Login": [],
   "backapp.view.Main": [],
@@ -1613,17 +1611,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1765,18 +1752,25 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "backapp.controller.Commande": [],
   "backapp.controller.Facebook": [],
+  "backapp.controller.FullScreen": [],
   "backapp.controller.Google": [],
   "backapp.controller.Main": [],
+  "backapp.controller.Ordonnance": [],
   "backapp.controller.Produit": [],
   "backapp.form.Produit": [
     "widget.formProduit"
   ],
   "backapp.model.Commande": [],
+  "backapp.model.LigneCommande": [],
   "backapp.model.Ordonnance": [],
   "backapp.model.Produit": [],
   "backapp.store.Commandes": [
     "store.Commande"
+  ],
+  "backapp.store.DetailCommande": [
+    "store.DetailCommande"
   ],
   "backapp.store.Ordonnances": [
     "store.Ordonnances"
@@ -1796,6 +1790,9 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.utils.LoadMaskCustom": [
     "widget.loadmaskypm"
   ],
+  "backapp.utils.PinchZoomImage": [
+    "widget.pinchzoomimage"
+  ],
   "backapp.utils.Slot": [
     "widget.pickerslot"
   ],
@@ -1805,8 +1802,15 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.utils.TimePickerField": [
     "widget.timepickerfield"
   ],
+  "backapp.utils.Transform": [],
   "backapp.view.Commande": [
     "widget.commande"
+  ],
+  "backapp.view.FicheCommande": [
+    "widget.main"
+  ],
+  "backapp.view.FicheOrdonnance": [
+    "widget.fiche-ordonnance"
   ],
   "backapp.view.FicheProduit": [
     "widget.main"

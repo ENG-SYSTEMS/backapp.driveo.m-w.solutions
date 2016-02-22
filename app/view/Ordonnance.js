@@ -23,7 +23,7 @@ Ext.define('backapp.view.Ordonnance', {
                xtype: 'toolbar',
                docked: 'top',
                title: 'Liste des ordonnances',
-               cls: 'header',
+               cls: 'header top',
                items: [
                     {
                         xtype: 'button',
@@ -52,12 +52,13 @@ Ext.define('backapp.view.Ordonnance', {
                         store: 'Ordonnances',
                         cls: 'product-list',
                         infinite: false,
-                        action: 'listeproduit',
+                        action: 'listeordonnance',
                         itemTpl: '<div class="product">'+
-                        '<span class="product-dist product-near">{MontantTTC} € TTC</span>'+
-                        '<h2>({Reference})</h2>'+
-                        '<span class="product-hours">{TarifText}</span>'+
-                            /*'<span class="valet-address">Poids: {Poids}<br />Largeur: {Largeur} <br />Hauteur: {Hauteur} <br /> Profondeur: {Profondeur}</span>'+*/
+                        '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
+                        '{EtatText}'+
+                        '<h2>{Date}</h2>'+
+                        '<span class="product-hours">{Commentaire}</span>'+
+                            '<span class="valet-address">{Nom} {Prenom}</span>'+
                         '</div>',
                         grouped: false,
                         pinHeaders: false,

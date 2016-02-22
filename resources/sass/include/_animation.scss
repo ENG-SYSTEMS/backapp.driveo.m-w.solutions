@@ -1,12 +1,12 @@
 .body-animated {
-  -webkit-transform: perspective(600px) translate3d(236px, 0px, - 263px) rotateY(-50deg);
-  transform: perspective(600px) translate3d(236px, 0px, - 263px) rotateY(-50deg);
+  -webkit-transform: perspective(600px) translate3d(286px, 0px, 0) rotateY(0);
+  transform: perspective(600px) translate3d(286px, 0px, 0) rotateY(0);
   z-index:9;
 }
 #sidemenu.menu-animated {
   -webkit-transform: perspective(600px) translate3d(0px, 0px, 0px) rotateY(0deg) !important;
   transform: perspective(600px) translate3d(0px, 0px, 0px) rotateY(0deg) !important;
-  z-index: 9;
+  z-index: 8;
 }
 #sidemenu{
   -webkit-transition:all 500ms ease;
@@ -14,15 +14,17 @@
   position: absolute;
   top:0;
   bottom:0;
-  z-index:0;
-  -webkit-transform: perspective(600px) translate3d(-250px, 0px, -1px) rotateY(90deg) !important;
-  transform: perspective(600px) translate3d(-250px, 0px, -1px) rotateY(90deg) !important;
+  z-index:8;
+  -webkit-transform: perspective(600px) translate3d(-750px, 0px, -1000px) rotateY(90deg) !important;
+  transform: perspective(600px) translate3d(-750px, 0px, -1000px) rotateY(90deg) !important;
 }
 #ext-viewport{
   -webkit-transition:all 500ms ease;
   transition:all 500ms ease;
 }
-
+#ext-viewport{
+  z-index:9 !important;
+}
 
 .x-body .x-scroll-view .x-container.x-picker {
   z-index: 10;

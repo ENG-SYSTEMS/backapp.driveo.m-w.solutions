@@ -1,0 +1,25 @@
+.client-registration{
+    background-image: url(../images/pictures/bg-login-2.jpg);
+    background-position: left;
+    background-size: cover;
+    /*margin-top: 60px;*/
+}
+
+.annulation{
+  margin: 0 20px 0 22px;
+}
+.valider-inscription {
+  margin: 0 15px;
+}
+
+.registration-box{
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 450px;
+    top: 20%;
+    left: 50%;
+    margin-top: 15%;
+    margin-left: -140px;
+    background-color: rgba(255,255,255,0);
+}

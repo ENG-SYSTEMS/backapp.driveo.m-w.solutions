@@ -16,20 +16,22 @@
   transition: all 200ms ease;
   transform: scale(1,1);
   -webkit-transform: scale(1,1);
-  background-color: #db5555;
+  background-color: #8d188f;
   color: #fff;
-  font-weight: 800;
+  font-weight: 400;
   border: 0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   font-family: inherit;
   font-size: 1.3em;
+  box-shadow: 0 0 10px #666;
+
 }
 .ypm-button:hover{
   color: #f4f4f4!important;
   /*border: 2px solid rgba(255,255,255,0.8);*/
-  background-color: #db5555;
+  background-color: #8d188f;
 }
 
 .ypm-button.block {
@@ -75,7 +77,9 @@ margin: 10px auto;
   background-image: url(../images/Googlelogo.png);
 }
 
-
+.ypm-button .x-button-label{
+   text-shadow: 0 0 10px #666;
+}
 
 
 /***** menus toolbar *****/
@@ -136,4 +140,37 @@ margin: 10px auto;
 }
 .x-layout-box>.x-layout-box-item.button-call-dialer, .x-layout-box>.x-layout-box-item.button-call-map {
   display: flex !important;
+}
+
+/*********** DRIVEO BUTTONS ************/
+.driveo-button{
+  background-color: #8d188f;
+  padding: 5px 10px;
+  overflow: initial;
+  display: block;
+  transition: all 200ms ease;
+  transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  color: #fff;
+  font-weight: 800;
+  border: 0;
+  font-family: inherit;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 24px;
+}
+.driveo-button .x-button-label{
+  margin: auto;
+}
+.driveo-button.alt{
+  background-color: #80cc28;
+  color: #333;
+}
+.driveo-button:active{
+  background-color: #80cc28;
+  color: #333;
+}
+.driveo-button.alt:active{
+  background-color: #8d188f;
+  color: #fff;
 }

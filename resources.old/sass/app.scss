@@ -1,0 +1,42 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/base';
+@import 'sencha-touch/base/all';
+
+// Views
+@import 'include/login';
+@import 'include/product_list';
+/*@import 'include/valet_profile';
+@import 'include/qrcode';
+@import 'include/buy';
+@import 'include/client_registration';
+@import 'include/histo_commentaire';
+@import 'include/car_list';*/
+
+// Components
+@import 'include/body';
+@import 'include/animation';
+@import 'include/buttons';
+@import 'include/titlebars';
+@import 'include/fieldsets';
+@import 'include/textfields';
+@import 'include/toggle';
+@import 'include/selectfields';
+@import 'include/sidebar';
+@import 'include/popup';
+@import 'include/message';
+@import 'include/autoComplete';
+@import 'include/loading';
+@import 'include/scroll_container';
+// Structure
+@import 'include/footer';
+
+// Examples of using the icon mixin:
+// @include icon('user');
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200italic,200,300italic,600);

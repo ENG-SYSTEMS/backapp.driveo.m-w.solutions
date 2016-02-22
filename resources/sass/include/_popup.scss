@@ -1,6 +1,7 @@
 .x-msgbox{
     padding: 6px;
     background-color: #f4f4f4;
+  box-shadow: 0 0 10px #333;
 }
 
 .x-msgbox-buttons .x-button {
@@ -8,17 +9,18 @@
     transition: all 200ms ease;
     transform: scale(1,1);
     -webkit-transform: scale(1,1);
-    background-color: #db5555;
+    background-color: #8d188f;
     color: #fff;
     font-size: 14px;
     font-weight: 400;
-    border: 2px solid rgba(255,255,255,0.2);
+    border: 5px solid rgba(255,255,255,0.8);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     font-family: 'Open Sans';
     border-radius: 15px;
     padding: 10px;
     margin: 5px;
+    box-shadow: 0 0 10px #333;
 }
 .x-msgbox .x-toolbar.x-docked-bottom {
   border-top: 0;
@@ -31,8 +33,8 @@
     background-size: 100px 100px;
     background-repeat: repeat;
     transition: all 350ms ease-in-out;
-    background-color: #16701e;
-    border-bottom: 5px solid #0e4813;
+    background-color: #8d188f;
+    border-bottom: 5px solid #80cc28;
 }
 .x-msgbox .x-toolbar.x-msgbox-title .x-innerhtml{
     font-family: 'Titillium Web', sans-serif;
@@ -54,7 +56,7 @@
 /********* POPUP CUSTOM ***********/
 .x-container.x-panel.x-sized.x-floating {
   background-color: #f4f4f4;
-  border: 5px solid #db5555;
+  border: 5px solid #8d188f;
   border-radius: 5px;
 }
 .x-panel.x-floating .x-panel-inner {

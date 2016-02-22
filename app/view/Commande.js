@@ -23,7 +23,7 @@ Ext.define('backapp.view.Commande', {
                xtype: 'toolbar',
                docked: 'top',
                title: 'Liste des commandes',
-               cls: 'header',
+               cls: 'header top',
                items: [
                     {
                         xtype: 'button',
@@ -52,12 +52,12 @@ Ext.define('backapp.view.Commande', {
                         store: 'Commandes',
                         cls: 'product-list',
                         infinite: false,
-                        action: 'listeproduit',
+                        action: 'listecommande',
                         itemTpl: '<div class="product">'+
                         '<span class="product-dist product-near">{MontantTTC} € TTC</span>'+
-                        '<h2>({Reference})</h2>'+
-                        '<span class="product-hours">{TarifText}</span>'+
-                            /*'<span class="valet-address">Poids: {Poids}<br />Largeur: {Largeur} <br />Hauteur: {Hauteur} <br /> Profondeur: {Profondeur}</span>'+*/
+                        '<h2>{RefCommande}  {Nom} {Prenom}</h2>'+
+                        '{Etat}'+
+                        '<span class="">{DateCommande}</span>'+
                         '</div>',
                         grouped: false,
                         pinHeaders: false,

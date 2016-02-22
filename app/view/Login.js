@@ -16,15 +16,17 @@ Ext.define('backapp.view.Login', {
             {
                 xtype: 'container',
                 cls: 'login-wrapper',
+                scrollable: true,
                 items:[
                     {
                         xtype: 'container',
                         cls: 'loginbox',
                         width: 280,
+                        style: 'margin-bottom:80px;',
                         items:[
                             {
                                 width: '100%',
-                                height: 170,
+                                height: 236,
                                 cls: 'titre_logo',
                                 html: '<h1>Back Office</h1>'
                             },

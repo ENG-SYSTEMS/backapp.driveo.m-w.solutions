@@ -22,15 +22,23 @@ Ext.define('backapp.model.Produit', {
             {name: 'Tarif',        type: 'float'},
             {name: 'TarifText',        type: 'float' ,convert: function (value, record) {
                 value=record.get('Tarif');
+                var tva = 1;
+                switch (record.get('TypeTva')) {
+                    case 1: tva=1.2; break;
+                    case 2: tva=1.055; break;
+                    case 3: tva=1.1; break;
+                    case 4: tva=1.021; break;
+                }
+                value = value*tva;
                 var DecimalSeparator = '.';
                 var AmountWithCommas = value;
                 var arParts = String(AmountWithCommas).split(DecimalSeparator);
                 var intPart = arParts[0];
                 var decPart = (arParts.length > 1 ? arParts[1] : '');
                 decPart = (decPart + '00').substr(0,2);
-                return intPart + DecimalSeparator + decPart + ' € HT';
+                return intPart + DecimalSeparator + decPart + ' € TTC';
             }},
-            {name: 'TypeTvaInterne',        type: 'integer'},
+            {name: 'TypeTva',        type: 'integer'},
             {name: 'TypeTvaExp',        type: 'integer'},
             {name: 'Ordre',        type: 'string'},
             {name: 'Url',        type: 'string'},
