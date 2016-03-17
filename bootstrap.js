@@ -638,6 +638,17 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
+  "Ext.log.Base": [],
+  "Ext.log.Logger": [],
+  "Ext.log.filter.Filter": [],
+  "Ext.log.filter.Priority": [],
+  "Ext.log.formatter.Default": [],
+  "Ext.log.formatter.Formatter": [],
+  "Ext.log.formatter.Identity": [],
+  "Ext.log.writer.Console": [],
+  "Ext.log.writer.DocumentTitle": [],
+  "Ext.log.writer.Remote": [],
+  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -791,6 +802,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "backapp.utils.Config": [],
   "backapp.utils.DataViewYpm": [],
   "backapp.utils.LoadMaskCustom": [],
+  "backapp.utils.Notification": [],
   "backapp.utils.PinchZoomImage": [],
   "backapp.utils.Slot": [
     "Ext.Picker.Slot"
@@ -1611,6 +1623,17 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
+  "Ext.log.Base": [],
+  "Ext.log.Logger": [],
+  "Ext.log.filter.Filter": [],
+  "Ext.log.filter.Priority": [],
+  "Ext.log.formatter.Default": [],
+  "Ext.log.formatter.Formatter": [],
+  "Ext.log.formatter.Identity": [],
+  "Ext.log.writer.Console": [],
+  "Ext.log.writer.DocumentTitle": [],
+  "Ext.log.writer.Remote": [],
+  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1790,6 +1813,7 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.utils.LoadMaskCustom": [
     "widget.loadmaskypm"
   ],
+  "backapp.utils.Notification": [],
   "backapp.utils.PinchZoomImage": [
     "widget.pinchzoomimage"
   ],
