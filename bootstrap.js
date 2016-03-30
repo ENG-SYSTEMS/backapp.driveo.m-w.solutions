@@ -801,6 +801,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "backapp.utils.AutoComplete": [],
   "backapp.utils.Config": [],
   "backapp.utils.DataViewYpm": [],
+  "backapp.utils.ImageViewer": [],
   "backapp.utils.LoadMaskCustom": [],
   "backapp.utils.Notification": [],
   "backapp.utils.PinchZoomImage": [],
@@ -1809,6 +1810,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "backapp.utils.DataViewYpm": [
     "widget.dataviewypm"
+  ],
+  "backapp.utils.ImageViewer": [
+    "widget.imageviewer"
   ],
   "backapp.utils.LoadMaskCustom": [
     "widget.loadmaskypm"

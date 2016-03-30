@@ -49,17 +49,19 @@ Ext.define('backapp.utils.Notification', {
 
             //declenche une notification local
 //            var sound = device.platform == 'Android' ? 'file://resources/sounds/sound.mp3' : 'file://resources/sounds/beep.caf';
-            var sound = device.platform =='file://resources/sounds/sound.mp3';
+            var sound = device.platform == "Android" ?  'file://resources/sounds/sound.mp3': 'default';
             var date = new Date();
 
-            cordova.plugins.notification.local.schedule({
-                id: 1,
-                title: data.title,
-                message: data.message,
-                firstAt: date,
-                sound: sound,
-                icon: "icon.png"
-            });
+            if (data.additionalData.alert) {
+                cordova.plugins.notification.local.schedule({
+                    id: 1,
+                    title: data.title,
+                    message: data.message,
+                    firstAt: date,
+                    sound: sound,
+                    icon: "icon.png"
+                });
+            }
 
             //on rafraichit également le store correspondant
             switch (data.additionalData.store){

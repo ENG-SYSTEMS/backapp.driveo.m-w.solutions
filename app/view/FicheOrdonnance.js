@@ -2,6 +2,7 @@ Ext.define('backapp.view.FicheOrdonnance', {
     extend: 'Ext.Container',
     xtype: 'fiche-ordonnance',
     requires: [
+        'backapp.utils.ImageViewer'
     ],
     config: {
         cls: 'product-list-page',
@@ -39,7 +40,6 @@ Ext.define('backapp.view.FicheOrdonnance', {
             },
             {
                 layout: 'hbox',
-                height: 102,
                 width: '100%',
                 cls: 'product-barre',
                 items: [
@@ -58,19 +58,19 @@ Ext.define('backapp.view.FicheOrdonnance', {
                                 xtype: 'button',
                                 cls: 'driveo-button success block',
                                 action: 'ordonnancePrepare',
-                                text: 'Ordonnance préparée'
+                                text: 'Définir l\'ordonnance comme préparée'
                             },
                             {
                                 xtype: 'button',
                                 cls: 'driveo-button warning block',
                                 action: 'ordonnanceRetire',
-                                text: 'Ordonnance retirée'
+                                text: 'Définir l\'ordonnance comme retirée'
                             },
                             {
                                 xtype: 'button',
                                 cls: 'driveo-button danger block',
                                 action: 'ordonnanceCloture',
-                                text: 'Ordonnance cloturée'
+                                text: 'Définir l\'ordonnance comme cloturée'
                             },
                             {
                                 xtype: 'hiddenfield',
@@ -82,25 +82,15 @@ Ext.define('backapp.view.FicheOrdonnance', {
                 ]
             },
             {
-                scrollable: true,
-                style: 'height: calc( 100% - 130px );margin-top:10px;',
+                height: '100%',
                 items:[
                     {
-                        items:[
-                            {
-                                xtype: 'image',
-                                width: '100%',
-                                style : 'min-height:450px',
-                                action: 'ordonnanceImage',
-                                src: '/resources/images/default-photo.png'
-                            },
-                            {
-                                xtype: 'button',
-                                cls: 'ypm-button warning block',
-                                action: 'gotofullscreen',
-                                text: 'Visualiser en plein écran'
-                            }
-                        ]
+                        xtype: 'pinchzoomimage',
+                        width: '100%',
+                        flex: 1,
+                        height: '100%',
+                        action: 'ordonnanceImage',
+                        src: '/resources/images/default-photo.png'
                     }
                 ]
             }
@@ -114,8 +104,13 @@ Ext.define('backapp.view.FicheOrdonnance', {
         this.down('[action=titleordonnande]').setTitle(record.get('Nom')+' '+record.get('Prenom'));
         this.down('[action=ordonnanceImage]').setSrc(backapp.utils.Config.getDomain()+'/'+record.get('Image'));
         this.down('[action=ordonnance-info]').setHtml(
-            '<h3>Date: '+record.get('Date')+'</h3><p>'+
-            record.get('EtatText')+'</p>'+
+            record.get('EtatText')+''+
+            '<h1>'+record.get('Nom')+' '+record.get('Prenom')+'</h1><p>'+
+            '<b>Tel: '+record.get('Telephone')+'</b><br/>'+
+            '<b>Email: '+record.get('Email')+'</b><br/>'+
+            '<b>Adresse: '+record.get('Adresse')+'</b><br/>'+
+            '<b>'+record.get('CodPos')+' '+record.get('Ville')+'</b><br/>'+
+            '<b>Date: '+record.get('Date')+'</b></p>'+
             '<div>Commentaires: '+record.get('Commentaire')+'</div>'
         );
         this.down('[action=ordonnanceId]').setValue(record.get('id'));

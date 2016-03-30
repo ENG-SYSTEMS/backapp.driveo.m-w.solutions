@@ -101,8 +101,9 @@ Ext.define('backapp.utils.PinchZoomImage', {
 			pinch : {
 				fn : function (e, el, obj) {	
 					if (this.getIsFrozen()) return;
+                    console.log(e.scale);
 					this.zoom(e.scale-1);
-					this.dragged = true;		
+					this.dragged = true;
 				},	
 				element: 'element',
 				delegate:'canvas'			
@@ -238,7 +239,7 @@ Ext.define('backapp.utils.PinchZoomImage', {
 		this.zoomValue += zValue;		
 		var pt = this.ctx.transformedPoint(this.lastX, this.lastY);
 		this.ctx.translate(pt.x,pt.y);
-		var factor = Math.pow(this.getScaleFactor(),zValue);
+        var factor = Math.pow(this.getScaleFactor(),zValue);
 		this.ctx.scale(factor,factor);
 		this.ctx.translate(-pt.x,-pt.y);
 		this.draw();

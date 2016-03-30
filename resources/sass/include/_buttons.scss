@@ -149,15 +149,17 @@ margin: 10px auto;
   overflow: initial;
   display: block;
   transition: all 200ms ease;
-  transform: scale(1,1);
-  -webkit-transform: scale(1,1);
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
   color: #fff;
   font-weight: 800;
   border: 0;
   font-family: inherit;
   font-size: 1.3em;
   text-align: center;
-  line-height: 24px;
+  line-height: 28px;
+  margin: 4px;
+  box-shadow: 0 0 5px #999;
 }
 .driveo-button .x-button-label{
   margin: auto;

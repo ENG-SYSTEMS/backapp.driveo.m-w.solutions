@@ -42,7 +42,6 @@ Ext.define('backapp.view.FicheCommande', {
             },
             {
                 layout: 'hbox',
-                height: 102,
                 flex: 'auto',
                 width: '100%',
                 cls: 'product-barre',
@@ -50,7 +49,7 @@ Ext.define('backapp.view.FicheCommande', {
                     {
                         action: 'detailcommande',
                         flex: 1,
-                        style: 'margin: 10px;',
+                        style: 'margin: 10px;min-height:150px',
                         html: ''
                     },
                     {
@@ -111,9 +110,12 @@ Ext.define('backapp.view.FicheCommande', {
         this.down('[action=commandetitle]').setTitle(record.get('RefCommande'));
         this.down('[action=detailcommande]').setHtml('<div class="product">'+
             '<span class="product-dist product-near warning">Montant total: '+record.get('MontantTTC')+' € TTC</span>'+
-            '<h2>'+record.get('Nom')+' '+record.get('Prenom')+'</h2>'+
-            '<div style="float:left">'+record.get('Etat')+'</div>'+
-            '</div>');
+            '<h1>'+record.get('Nom')+' '+record.get('Prenom')+'</h1><p>'+
+            '<b>Tel: '+record.get('Telephone')+'</b><br/>'+
+            '<b>Email: '+record.get('Email')+'</b><br/>'+
+            '<b>Adresse: '+record.get('Adresse')+'</b><br/>'+
+            '<b>'+record.get('CodPos')+' '+record.get('Ville')+'</b><br/>'+
+            '<b>Date: '+record.get('Date')+'</b></p></div>');
         this.down('[action=commandeId]').setValue(record.get('id'));
 
         //redefinition du store PANIER

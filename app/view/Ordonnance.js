@@ -53,7 +53,7 @@ Ext.define('backapp.view.Ordonnance', {
                         cls: 'product-list',
                         infinite: false,
                         action: 'listeordonnance',
-                        itemTpl: '<div class="product warning">'+
+                        itemTpl: '<div class="product {PrioriteCss}">'+
                         '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
                         '{EtatText}'+
                         '<h2>{Date}</h2>'+

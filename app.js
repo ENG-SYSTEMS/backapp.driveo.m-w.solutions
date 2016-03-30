@@ -66,7 +66,7 @@ Ext.application({
     models: ['Produit','Commande','Ordonnance','LigneCommande'],
     
     stores: ['Produits','Commandes','Ordonnances','DetailCommande'],
-
+/*
     eventPublishers: {
         touchGesture: {
             recognizers: {
@@ -74,7 +74,7 @@ Ext.application({
             }
         }
     },
-
+*/
     checkKey: function () {
         console.log('check key');
         //Récupération du store key
