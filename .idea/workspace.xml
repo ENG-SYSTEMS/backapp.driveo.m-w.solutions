@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0f8bac-5e42-43cc-9d61-93fe5a6fb10e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/ImageViewer.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_appearance.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_background-clip.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_background-origin.scssc" afterPath="" />
@@ -111,42 +110,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Dock.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Fit.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Float.scssc" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Ordonnance.js" afterPath="$PROJECT_DIR$/app/model/Ordonnance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/Config.js" afterPath="$PROJECT_DIR$/app/utils/Config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/Notification.js" afterPath="$PROJECT_DIR$/app/utils/Notification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/PinchZoomImage.js" afterPath="$PROJECT_DIR$/app/utils/PinchZoomImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/FicheCommande.js" afterPath="$PROJECT_DIR$/app/view/FicheCommande.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/FicheOrdonnance.js" afterPath="$PROJECT_DIR$/app/view/FicheOrdonnance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Ordonnance.js" afterPath="$PROJECT_DIR$/app/view/Ordonnance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/development/backapp/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/development/backapp/sencha-compiler/app/full-page-master-bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/backapp/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/production/backapp/sencha-compiler/app/full-page-master-bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/release/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/release/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/release/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/release/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" afterPath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/assets/www/resources/css/app.css" afterPath="$PROJECT_DIR$/cordova/platforms/android/assets/www/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/app.js" afterPath="$PROJECT_DIR$/cordova/www/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/resources/css/app.css" afterPath="$PROJECT_DIR$/cordova/www/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/include/_buttons.scss" afterPath="$PROJECT_DIR$/resources/sass/include/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/include/_product.scss" afterPath="$PROJECT_DIR$/resources/sass/include/_product.scss" />
     </list>
     <ignored path="backapp.driveo.m-w.solutions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -171,7 +135,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
+            <state relative-caret-position="750">
               <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding />
             </state>
@@ -191,7 +155,7 @@
       <file leaf-file-name="FicheOrdonnance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/FicheOrdonnance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="1695">
               <caret line="113" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding />
             </state>
@@ -201,7 +165,7 @@
       <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
+            <state relative-caret-position="2415">
               <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
               <folding />
             </state>
@@ -218,57 +182,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PinchZoomImage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/utils/PinchZoomImage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
-              <folding>
-                <marker date="1459364790427" expanded="true" signature="884:942" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageViewer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/utils/ImageViewer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1455">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_popup.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/include/_popup.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FicheCommande.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FicheCommande.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/FicheCommande.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+            <state relative-caret-position="98">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding>
-                <marker date="1459368004887" expanded="true" signature="3376:3884" placeholder="..." />
+                <marker date="1459440616034" expanded="true" signature="3376:3884" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ordonnance.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ordonnance.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/Ordonnance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="195">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -344,6 +274,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,8 +454,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,12 +523,13 @@
       <workItem from="1459347665181" duration="1859000" />
       <workItem from="1459355786096" duration="1194000" />
       <workItem from="1459357814127" duration="289000" />
-      <workItem from="1459358228186" duration="4964000" />
+      <workItem from="1459358228186" duration="6005000" />
+      <workItem from="1459440612097" duration="1887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8306000" />
+    <option name="totallyTimeSpent" value="11234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="924" width="1877" height="1056" extended-state="6" />
@@ -884,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4035">
           <caret line="269" column="14" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
           <caret line="75" column="56" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1860">
           <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,19 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Ordonnance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_panel.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
+        <state relative-caret-position="2415">
           <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
           <folding />
         </state>
@@ -976,7 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
+        <state relative-caret-position="750">
           <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
           <folding />
         </state>
@@ -984,7 +902,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/ImageViewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1455">
+        <state relative-caret-position="135">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -994,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/PinchZoomImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="3585">
           <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
           <folding>
             <marker date="1459364790427" expanded="true" signature="884:942" placeholder="..." />
@@ -1004,7 +922,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/FicheOrdonnance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="1695">
           <caret line="113" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
@@ -1012,11 +930,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/FicheCommande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state relative-caret-position="98">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
-            <marker date="1459368004887" expanded="true" signature="3376:3884" placeholder="..." />
+            <marker date="1459440616034" expanded="true" signature="3376:3884" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Ordonnance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
