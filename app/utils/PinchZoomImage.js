@@ -31,8 +31,11 @@ Ext.define('backapp.utils.PinchZoomImage', {
 			},
 			doubletap: {
 				fn : function(e, el, obj) {
+                    console.log('doubletabp')
 					if (this.getIsFrozen()) return;
-						this.redraw();
+                    if (this.isScaled)this.resetCanvas();
+                    else this.zoom(3);
+					this.redraw();
 				},	
 				element: 'element',
 				delegate:'canvas'				
@@ -68,12 +71,14 @@ Ext.define('backapp.utils.PinchZoomImage', {
 					this.lastY = e.pageY;
 					
 					if (this.dragStart && this.isScaled){
-						var pt = this.ctx.transformedPoint(this.lastX, this.lastY);
-						this.ctx.translate(pt.x-this.dragStart.x,pt.y-this.dragStart.y);
-						this.draw();
+						/*var pt = this.ctx.transformedPoint(this.lastX, this.lastY);
+						this.ctx.translate(pt.x-this.dragStart.x,pt.y-this.dragStart.y);*/
+                        this.ctx.setTransform(this.zoomValue,0,0,this.zoomValue,0,0);
+                        this.ctx.translate(this.lastX,this.lastY);
+                        this.draw();
 					}			
-					this.lastX = e.offsetX || (e.pageX - this.canvas.offsetLeft);
-					this.lastY = e.offsetY || (e.pageY - this.canvas.offsetTop);
+					/*this.lastX = e.offsetX || (e.pageX - this.canvas.offsetLeft);
+					this.lastY = e.offsetY || (e.pageY - this.canvas.offsetTop);*/
 				},	
 				element: 'element',
 				delegate:'canvas'		
@@ -101,8 +106,8 @@ Ext.define('backapp.utils.PinchZoomImage', {
 			pinch : {
 				fn : function (e, el, obj) {	
 					if (this.getIsFrozen()) return;
-                    console.log(e.scale);
-					this.zoom(e.scale-1);
+                    console.log('pinch',e);
+					this.zoom(e.scale, e.pageX, e.pageY);
 					this.dragged = true;
 				},	
 				element: 'element',
@@ -177,7 +182,7 @@ Ext.define('backapp.utils.PinchZoomImage', {
 	 * @param  {[type]} evt [event argument]
 	 */	
 	 handleScroll:function(evt){
-		if (!this.getUseMouseWheelEvent()) return;
+		if (!this.getUseMouseWheelEvent()||1) return;
 		var delta = evt.wheelDelta ? evt.wheelDelta/40 : evt.detail ? -evt.detail : 0;
 		if (delta) 	this.zoom(delta);
 		return evt.preventDefault() && false;
@@ -233,15 +238,24 @@ Ext.define('backapp.utils.PinchZoomImage', {
 	 * [zoom scale the image from the point(lastX,lastY).]
 	 * @param  {[type]} zValue [scaling value]
 	 */	
-	zoom:function(zValue){
-		if (this.zoomValue+ zValue < 0) return;	// prohibit to downsize less than fitted image.
+	zoom:function(zValue,x,y){
+		/*if (zValue < 1 || zValue > 10){
+            //console.log('how of limits ', this.zoomValue,zValue);
+            return;	// prohibit to downsize less than fitted image.
+        }*/
+        if (zValue<1) zValue = 1;
+        if (zValue>10) zValue = 10;
 		this.isScaled = true;
-		this.zoomValue += zValue;		
+		this.zoomValue = zValue;
+        //console.log('zValue',zValue,'zoomValue',this.zoomValue);
 		var pt = this.ctx.transformedPoint(this.lastX, this.lastY);
-		this.ctx.translate(pt.x,pt.y);
-        var factor = Math.pow(this.getScaleFactor(),zValue);
-		this.ctx.scale(factor,factor);
-		this.ctx.translate(-pt.x,-pt.y);
+        //this.ctx.translate(pt.x,pt.y);
+        //this.ctx.translate(this.lastX,this.lastY);
+        this.ctx.setTransform(this.zoomValue,0,0,this.zoomValue,x,y);
+        //var factor = Math.pow(this.getScaleFactor(),zValue);
+        //var factor = zValue;//(this.getScaleFactor()*(zValue/100))+1;
+		//this.ctx.scale(factor,factor);
+		this.ctx.translate(-this.lastX,-this.lastY);
 		this.draw();
 	},
 	/**
@@ -255,7 +269,7 @@ Ext.define('backapp.utils.PinchZoomImage', {
 	 * [draw draw image on the canvas size with resized from original.]
 	 */	
 	draw:function (){
-		if (this.image.complete  == true && this.ctx != null) {	
+		if (/*this.image.complete  == true &&*/ this.ctx != null) {
 			var p1 = this.ctx.transformedPoint(0,0);
 			var p2 = this.ctx.transformedPoint(this.canvas.width,this.canvas.height);
 			this.ctx.clearRect(p1.x,p1.y,p2.x-p1.x,p2.y-p1.y);

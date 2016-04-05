@@ -2,151 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0f8bac-5e42-43cc-9d61-93fe5a6fb10e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/ImageViewer.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_appearance.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_background-clip.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_background-origin.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_background-size.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_border-radius.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_box-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_box-sizing.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_box.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_filter.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_font-face.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_hyphenation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_images.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_inline-block.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_opacity.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_regions.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_shared.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_text-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_transform.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0324355efaae9245b99a587b2904403588b6df79/_transition.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/0c9b600b7c2e7d7317af0e94103e32dfe9aeb85c/_AbstractChart.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_blueprint-grid.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_carbon-fiber.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_checkerboard.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_cicada.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_gradients.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_houndstooth.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_lined-paper.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_madras.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_noise.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_polka-dot.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_radial-overlay.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_striped.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_stripes.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_tablecloth.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1411a251fc2cc743e4661898f9e0fd3d1f25dd8a/_tartan.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/148df003e7e66dcda2e56bff2af531baaf070441/_Table.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/17710e3ff4d21113bd7e9993c03ba0b3ae867b70/_Scroller.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/18ba8ab623692980a36c2d0418d523f89d36d1b1/_ListPaging.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/18ba8ab623692980a36c2d0418d523f89d36d1b1/_PullRefresh.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1ca449cbcc4894ccac57754fd3b99685a1af8173/_PaintMonitor.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1ca449cbcc4894ccac57754fd3b99685a1af8173/_SizeMonitor.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/1ca449cbcc4894ccac57754fd3b99685a1af8173/_Translatable.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/37915a4a44659acffcc709505379fdb7e593b898/_Picker.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/3d2582a9afc1fa650eb7a46dcbf10f78bf1a1b03/_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/43ca993cf4282d1ced959bbe34632d5573f119bc/_float.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/43ca993cf4282d1ced959bbe34632d5573f119bc/_hacks.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/46ef22d7d833a217fcd77598c2582b7786bbfc23/_Panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/47aa23bacde586cf80432a34774942cca08535af/_Panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/50ba1b5b289a6fb2bfa44db1c7afebfebfad1a11/_Default.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Button.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Class.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Img.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Map.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Mask.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Media.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Menu.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_MessageBox.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_ProgressIndicator.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Sheet.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Toast.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_Toolbar.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/5561fff0ded5f78f4c265c30cd6a1c51cf42829a/_all.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_animation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_autoComplete.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_body.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_buttons.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_dropdownmenu.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_fieldsets.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_loading.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_login.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_message.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_panel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_popup.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_product.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_product_list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_scroll_container.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_search.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_selectfields.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_sidebar.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_textfields.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_titlebars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_toast.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_toggle.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/7228c6b6b54ecc0bad949e11dcdde8c7029c754a/_all.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/743cd6de073fa739b7a846bb6d28d6628787f915/_css3.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/743cd6de073fa739b7a846bb6d28d6628787f915/_support.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/7b07b4295948238d95a9521f2ad48b549006b125/_Carousel.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/8051cb7eb1150f2bfdf9335ad5f71a3fd6529be6/_colors.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/8051cb7eb1150f2bfdf9335ad5f71a3fd6529be6/_typography.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/87e3640012a052e3ac54c44672d26e39f29cb6a5/_link-colors.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/965c02fe0b161a9ee997934736c24ac219910340/_background.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/965c02fe0b161a9ee997934736c24ac219910340/_color.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/a8f4a67eeb867d86d55094744e61d30c9c50a9d7/_Class.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/acc26b27dab4f8dc1433f77cb55acdb07f2e9e89/_DataView.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/acc26b27dab4f8dc1433f77cb55acdb07f2e9e89/_IndexBar.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/acc26b27dab4f8dc1433f77cb55acdb07f2e9e89/_List.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/b7a8d1f9b2d9bc1cb145a67c6b069acff77f63c7/_Grid.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/c5ecda99de4df973c88e0ace653bb15ada4cadac/app.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ec9ec205a0e32686fe11e7b659c2227fcf09ec57/_Slider.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Abstract.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Box.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Card.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Dock.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Fit.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/ff0b1e6c46b34ae3f6016b6e43739047ff59dc78/_Float.scssc" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/images/logo_menu_200.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_buy.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_car_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_client_registration.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_histo_commentaire.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_qrcode.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/sass/include/_valet_profile.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Ordonnance.js" afterPath="$PROJECT_DIR$/app/model/Ordonnance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/Config.js" afterPath="$PROJECT_DIR$/app/utils/Config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/Notification.js" afterPath="$PROJECT_DIR$/app/utils/Notification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_buttons.scssc" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_buttons.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_product.scssc" afterPath="$PROJECT_DIR$/resources/sass/.sass-cache/64e684f8ed403b35653842aa25a9ff5d3c1b7040/_product.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/cordova/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/PinchZoomImage.js" afterPath="$PROJECT_DIR$/app/utils/PinchZoomImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/FicheCommande.js" afterPath="$PROJECT_DIR$/app/view/FicheCommande.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/FicheOrdonnance.js" afterPath="$PROJECT_DIR$/app/view/FicheOrdonnance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Ordonnance.js" afterPath="$PROJECT_DIR$/app/view/Ordonnance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" afterPath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/app.js" afterPath="$PROJECT_DIR$/cordova/www/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.js" afterPath="$PROJECT_DIR$/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap.json" afterPath="$PROJECT_DIR$/bootstrap.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/development/backapp/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/development/backapp/sencha-compiler/app/full-page-master-bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/temp/production/backapp/sencha-compiler/app/full-page-master-bundle.js" afterPath="$PROJECT_DIR$/build/temp/production/backapp/sencha-compiler/app/full-page-master-bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/release/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/mergeAssets/release/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/release/merger.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/CordovaLib/build/intermediates/incremental/packageResources/release/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" afterPath="$PROJECT_DIR$/cordova/platforms/android/assets/www/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/assets/www/resources/css/app.css" afterPath="$PROJECT_DIR$/cordova/platforms/android/assets/www/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/cordova/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/app.js" afterPath="$PROJECT_DIR$/cordova/www/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/resources/css/app.css" afterPath="$PROJECT_DIR$/cordova/www/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/include/_buttons.scss" afterPath="$PROJECT_DIR$/resources/sass/include/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/include/_product.scss" afterPath="$PROJECT_DIR$/resources/sass/include/_product.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backapp.driveo.m-w.solutions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,114 +51,33 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="backapp.driveo.m-w.solutions" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ordonnance.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Ordonnance.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="FicheOrdonnance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/FicheOrdonnance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="113" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1911">
+              <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_product.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/include/_product.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PinchZoomImage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PinchZoomImage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/utils/PinchZoomImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
+            <state vertical-scroll-proportion="-1.4428383" vertical-offset="2073" max-vertical-offset="4329">
+              <caret line="75" column="83" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="83" />
               <folding>
-                <marker date="1459364790427" expanded="true" signature="884:942" placeholder="..." />
+                <marker date="1459406412804" expanded="false" signature="884:942" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageViewer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/utils/ImageViewer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1455">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_popup.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/include/_popup.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FicheCommande.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/FicheCommande.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-              <folding>
-                <marker date="1459368004887" expanded="true" signature="3376:3884" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ordonnance.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Ordonnance.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -285,36 +93,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/view/Ordonnance.js" />
-        <option value="$PROJECT_DIR$/app/utils/Notification.js" />
-        <option value="$PROJECT_DIR$/app/utils/Config.js" />
-        <option value="$PROJECT_DIR$/app/model/Ordonnance.js" />
-        <option value="$PROJECT_DIR$/resources/sass/include/_buttons.scss" />
-        <option value="$PROJECT_DIR$/resources/sass/include/_product.scss" />
-        <option value="$PROJECT_DIR$/app/utils/ImageViewer.js" />
-        <option value="$PROJECT_DIR$/app/view/FicheOrdonnance.js" />
-        <option value="$PROJECT_DIR$/app/utils/PinchZoomImage.js" />
         <option value="$PROJECT_DIR$/app/view/FicheCommande.js" />
+        <option value="$PROJECT_DIR$/app/utils/PinchZoomImage.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-  </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="924" />
-    <option name="width" value="1877" />
-    <option name="height" value="1056" />
+    <option name="x" value="47" />
+    <option name="y" value="24" />
+    <option name="width" value="1393" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -340,10 +133,9 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,7 +151,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -369,65 +161,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -437,15 +175,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -455,74 +193,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backapp.driveo.m-w.solutions" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -543,43 +226,34 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
+    <list size="0" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -588,7 +262,6 @@
       <changelist id="9f0f8bac-5e42-43cc-9d61-93fe5a6fb10e" name="Default" comment="" />
       <created>1447749687216</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
       <updated>1447749687216</updated>
       <workItem from="1459347665181" duration="1859000" />
       <workItem from="1459355786096" duration="1194000" />
@@ -601,29 +274,29 @@
     <option name="totallyTimeSpent" value="8306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="924" width="1877" height="1056" extended-state="6" />
+    <frame x="47" y="24" width="1393" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17101759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17320503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -637,6 +310,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -644,291 +322,287 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controller/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_message.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_popup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_product_list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="117" column="37" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_message.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_product_list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="117" column="37" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Ordonnance.js.old">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/LigneCommande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Produit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/store/Produits.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/store/Ordonnances.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/store/DetailCommande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/Transform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_sidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Produit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/form/Produit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_animation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/store/Commandes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Commande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/FicheProduit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Commande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="54" column="44" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Commande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="42" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4035">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="269" column="14" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/Notification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3047">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="209" column="36" selection-start-line="209" selection-start-column="36" selection-end-line="209" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/FullScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="75" column="56" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Ordonnance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Ordonnance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding />
         </state>
@@ -936,23 +610,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Ordonnance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.8883049" vertical-offset="0" max-vertical-offset="761">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_panel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_popup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
@@ -960,15 +633,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2119" max-vertical-offset="2392">
+          <caret line="163" column="27" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/include/_product.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
@@ -976,49 +649,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3861">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <folding>
+            <marker date="1459368898693" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1459368898693" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1459368898693" expanded="true" signature="-1:-1" placeholder="{&quot;doubleTap&quot;: null...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/ImageViewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/PinchZoomImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
-          <folding>
-            <marker date="1459364790427" expanded="true" signature="884:942" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/FicheOrdonnance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="113" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/FicheCommande.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="2002">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/FicheOrdonnance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1911">
+          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/PinchZoomImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4428383" vertical-offset="2073" max-vertical-offset="4329">
+          <caret line="75" column="83" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="83" />
           <folding>
-            <marker date="1459368004887" expanded="true" signature="3376:3884" placeholder="..." />
+            <marker date="1459406412804" expanded="false" signature="884:942" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
   </component>
 </project>
+
