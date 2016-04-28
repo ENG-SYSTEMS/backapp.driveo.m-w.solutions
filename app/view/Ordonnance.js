@@ -53,12 +53,20 @@ Ext.define('backapp.view.Ordonnance', {
                         cls: 'product-list',
                         infinite: false,
                         action: 'listeordonnance',
-                        itemTpl: '<div class="product {PrioriteCss}">'+
-                        '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
-                        '{EtatText}'+
-                        '<h2>{Date}</h2>'+
-                        '<span class="product-hours">{Commentaire}</span>'+
-                            '<span class="valet-address">{Nom} {Prenom}</span>'+
+                        itemTpl: '<div class="list-item {PrioriteCss}">'+
+                            '<div class="list-item-col">' +
+                                '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
+                                '<h3>{Date}</h3>'+
+                                '<h2>{Nom} {Prenom}</h2>'+
+                                '<div>{Adresse} {CodPos} {Ville}</div>'+
+                                '<div>{Tel} {Email}</div>'+
+                            '</div>'+
+                            '<div class="list-item-col">' +
+                                '<div><b>Commentaires:</b> <br/>{Commentaire}</div>'+
+                            '</div>'+
+                            '<div class="list-item-col">' +
+                                '{EtatText}'+
+                            '</div>'+
                         '</div>',
                         grouped: false,
                         pinHeaders: false,

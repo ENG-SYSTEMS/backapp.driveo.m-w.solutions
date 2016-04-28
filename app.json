@@ -72,7 +72,15 @@
         },
         {
             "path": "resources/js/fastclick.js",
-            "x-bootstrap": true
+            "remote": true
+        },
+        {
+            "path": "resources/js/iscroll.js",
+            "remote": true
+        },
+        {
+            "path": "resources/js/iscroll-zoom.js",
+            "remote": true
         },
         {
             "path": "app.js",
@@ -98,6 +106,10 @@
      *      }
      */
     "css": [
+        {
+            "path": "resources/css/font-awesome.min.css",
+            "update": "delta"
+        },
         {
             "path": "resources/css/app.css",
             "update": "delta"
@@ -131,9 +143,10 @@
      */
     "resources": [
         "resources/images",
-        "resources/images/valets",
         "resources/fonts",
+        "resources/sounds",
         "resources/icons",
+        "resources/js",
         "resources/startup"
     ],
 

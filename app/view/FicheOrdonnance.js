@@ -2,7 +2,7 @@ Ext.define('backapp.view.FicheOrdonnance', {
     extend: 'Ext.Container',
     xtype: 'fiche-ordonnance',
     requires: [
-        'backapp.utils.ImageViewer'
+        'backapp.utils.ScrollZoomImage'
     ],
     config: {
         cls: 'product-list-page',
@@ -82,19 +82,13 @@ Ext.define('backapp.view.FicheOrdonnance', {
                 ]
             },
             {
+                xtype: 'scrollzoomimage',
+                width: '100%',
+                flex: 1,
                 height: '100%',
-                items:[
-                    {
-                        xtype: 'pinchzoomimage',
-                        width: '100%',
-                        flex: 1,
-                        height: '100%',
-                        action: 'ordonnanceImage',
-                        src: '/resources/images/default-photo.png'
-                    }
-                ]
+                action: 'ordonnanceImage',
+                src: '/resources/images/default-photo.png'
             }
-
         ]
     },
     setRecord: function (record){
@@ -115,12 +109,16 @@ Ext.define('backapp.view.FicheOrdonnance', {
         );
         this.down('[action=ordonnanceId]').setValue(record.get('id'));
 
+        this.down('[action=ordonnancePrepare]').setHidden(false);
+        this.down('[action=ordonnanceRetire]').setHidden(false);
+        this.down('[action=ordonnanceCloture]').setHidden(false);
+
         //boutons
         switch (record.get('Etat')) {
             case 1:
-                this.down('[action=ordonnancePrepare]').setHidden(false);
+                /*this.down('[action=ordonnancePrepare]').setHidden(false);
                 this.down('[action=ordonnanceRetire]').setHidden(false);
-                this.down('[action=ordonnanceCloture]').setHidden(false);
+                this.down('[action=ordonnanceCloture]').setHidden(false);*/
                 break;
             case 2:
             case 3:

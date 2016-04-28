@@ -197,9 +197,6 @@ Ext.application({
         //recupération de la geolocalisation
         console.log('call geoloc');
         backapp.utils.Config.initLocation();
-
-        // Initialize the main view
-        //Ext.Viewport.add(Ext.create('backapp.view.Main'));
     },
 
     onUpdated: function() {

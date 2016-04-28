@@ -14,9 +14,28 @@ Ext.define('backapp.model.Commande', {
                 if (!value) return "0";
                 else return value;
             }},
+            {name: 'Priorite', type: 'int'},
+            {name: 'PrioriteCss', type: 'int', convert: function (value,record) {
+                var t = parseInt(record.get('Priorite'));
+                if (t>20 && t<50)
+                    return 'warning';
+                if (t>=50)
+                    return 'danger';
+                if (t<=20&&t>10)
+                    return 'info';
+                if (t>0&&t<=10)
+                    return 'info';
+                if (t<=0)
+                    return 'disabled';
+            }},
             {name: 'Remise',        type: 'float'},
             {name: 'Nom',         type: 'string'},
             {name: 'Prenom',  type: 'string'},
+            {name: 'Mail',  type: 'string'},
+            {name: 'Tel',  type: 'string'},
+            {name: 'Adresse',  type: 'string'},
+            {name: 'CodePostal',  type: 'string'},
+            {name: 'Ville',  type: 'string'},
             {name: 'MontantPaye',        type: 'float'},
             {name: 'MontantLivraison',        type: 'float'},
             {name: 'Valide',        type: 'boolean'},

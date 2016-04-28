@@ -9,7 +9,9 @@ Ext.define('backapp.utils.Notification', {
         //initialisation du push
         var push = PushNotification.init({
             android: {
-                senderID: frontapp.utils.Config.getSenderId()
+                senderID: backapp.utils.Config.getSenderId(),
+                sound: "true",
+                vibrate: "true"
             },
             ios: {
                 alert: "true",
@@ -20,17 +22,17 @@ Ext.define('backapp.utils.Notification', {
         });
 
         push.on('registration', function(data) {
-            console.log('registration id '+data.registrationId);
+            console.log('registration id BACK OFFICE '+data.registrationId);
             //envoi du register id au server
-            var url = frontapp.utils.Config.getDomain()+'/Systeme/Device/registerDevice.json';
+            var url = backapp.utils.Config.getDomain()+'/Systeme/Device/registerDevice.json';
             Ext.Ajax.request({
                 url: url,
                 useDefaultXhrHeader: false,
                 params:{
                     KEY:  data.registrationId,
-                    user_id: frontapp.utils.Config.getCurrentUser().user_id,
+                    user_id: backapp.utils.Config.getCurrentUser().user_id,
                     Type: device.platform,
-                    Admin: 0
+                    Admin: 1
                 },
                 success: function (response, opts) {
                     console.log('Définition du register Id OK');
@@ -45,37 +47,57 @@ Ext.define('backapp.utils.Notification', {
         });
 
         push.on('notification', function(data) {
-            console.log('receive notification',data)
+            if (data.additionalData.foreground) {
+                navigator.notification.beep(1);
+            }
+
+            var ctr = backapp.app.getController('backapp.controller.Main');
+            console.log('receive notification',data);
 
             //declenche une notification local
-//            var sound = device.platform == 'Android' ? 'file://resources/sounds/sound.mp3' : 'file://resources/sounds/beep.caf';
-            var sound = device.platform == "Android" ?  'file://resources/sounds/sound.mp3': 'default';
-            var date = new Date();
+//            var sound = device.platform == 'Android' ? 'file://android_asset/www/resources/sounds/sound.mp3' : 'file://resources/sounds/beep.caf';
+            var path = window.location.pathname;
+            path = 'file:/' +path.substr( path, path.length - 10 )+'resources/sounds/sound.mp3';
+            var sound = (device.platform == "Android") ?  path: 'default';
+            console.log('sound', sound, path, device.platform);
+/*            var date = new Date();
 
-            if (data.additionalData.alert) {
+            if (data.additionalData.notify) {
                 cordova.plugins.notification.local.schedule({
-                    id: 1,
+                    id: 1231321,
                     title: data.title,
                     message: data.message,
                     firstAt: date,
-                    sound: sound,
-                    icon: "icon.png"
+                    sound: path,
+                    icon: true
                 });
-            }
+            }*/
+
+            var my_media = new Media(path,
+                // success callback
+                function () { console.log("playAudio():Audio Success"); },
+                // error callback
+                function (err) { console.log("playAudio():Audio Error: " + err); }
+            );
+            // Play audio
+            my_media.play();
 
             //on rafraichit également le store correspondant
             switch (data.additionalData.store){
                 case "Commandes":
                     var st = Ext.getStore('Commandes');
                     st.load();
-                    me.redirectTo('commande')
+                    ctr.redirectTo('commande')
                     break;
                 case "Ordonnances":
                     var st = Ext.getStore('Ordonnances');
                     st.load();
-                    me.redirectTo('ordonnance')
+                    ctr.redirectTo('ordonnance')
                     break;
             }
+
+            //on affiche un message
+            Ext.toast(data.message,5000);
         });
 
         push.on('error', function(e) {

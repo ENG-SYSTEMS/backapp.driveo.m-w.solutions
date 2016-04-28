@@ -41,65 +41,111 @@ Ext.define('backapp.view.Main', {
                 ]
             },
             {
-                width: '80%',
+                width: '100%',
                 layout: {
                     type: 'vbox'
                 },
-                style: 'margin: 10px 10%',
                 items: [
                     {
-                        cls: 'driv-panel warning',
+                        layout: 'hbox',
                         items: [
                             {
-                                html: '<h2>Ordonnances en cours</h2>'
-                            },
-                            {
-                                action: 'ordonnances-info',
-                                style: 'margin: 0 0 10px 0',
-                                html: '<div>Il n\'y a pas d\'ordonnance en cours.</div>'
-                            },
-                            {
                                 xtype: 'button',
-                                width: '100%',
-                                cls: 'ypm-button warning',
+                                cls: 'driveo-case x-iconalign-top fa fa-shopping-bag success',
+                                flex: 1,
+                                badgeClas: 'driveo-badge',
+                                action: 'menu-commande',
+                                html: 'Commandes'
+                            },
+                            {
+                                cls: 'driveo-case fa fa-medkit x-iconalign-top info',
+                                xtype: 'button',
+                                flex: 1,
+                                badgeClas: 'driveo-badge',
                                 action: 'menu-ordonnance',
-                                text: 'Liste des ordonnances'
+                                html: 'Ordonnances'
+                            },
+                            {
+                                cls: 'driveo-case fa fa-envelope  x-iconalign-top',
+                                xtype: 'button',
+                                flex: 1,
+                                action: 'menu-message',
+                                html: 'Messages'
                             }
                         ]
                     },
                     {
-                        cls: 'driv-panel warning',
-                        items: [
-                            {
-                                html: '<h2>Commandes en cours</h2>'
-                            },
-                            {
-                                action: 'commandes-info',
-                                style: 'margin: 0 0 10px 0',
-                                html: '<div>Il n\'y a pas de commande en cours.</div>'
-                            },
-                            {
-                                xtype: 'button',
-                                width: '100%',
-                                cls: 'ypm-button warning',
-                                action: 'menu-commande',
-                                text: 'Liste des commandes'
-                            },
-                            {
-                                xtype: 'button',
-                                width: '100%',
-                                cls: 'ypm-button',
-                                action: 'menu-produit',
-                                text: 'Parcourir les produits'
-                            }
-                        ]
+                        layout: 'hbox',
+                        cls: 'driveo-case warning text',
+                        html: '<h2>Dernières Commandes</h2>'
+                    },
+                    {
+                        title: 'Commandes',
+                        iconCls: 'cart',
+                        width: '100%',
+                        height: '240px',
+                        scrollable: false,
+                        xtype: 'list',
+                        store: 'Commandes',
+                        cls: 'product-list',
+                        infinite: false,
+                        action: 'listecommande',
+                        itemTpl: '<div class="list-item {PrioriteCss}">'+
+                        '<div class="list-item-col">' +
+                        '<h3>{DateCommande} {RefCommande}</h3>'+
+                        '<h2>{Nom} {Prenom}</h2>'+
+                        '<div>{Adresse} {CodePostal} {Ville}</div>'+
+                        '<div>{Tel} {Mail}</div>'+
+                        '</div>'+
+                        '<div class="list-item-col">' +
+                        '<div><b>Commentaires:</b> <br/>{Commentaire}</div>'+
+                        '</div>'+
+                        '<div class="list-item-col">' +
+                        '<div class="list-item-right">{Etat}</div>'+
+                        '<div class="list-item-right"><span class="label success">{MontantTTC} € TTC</span></div>'+
+                        '</div>'+
+                        '</div>',
+                        grouped: false,
+                        pinHeaders: false
+                    },
+                    {
+                        layout: 'hbox',
+                        cls: 'driveo-case success text',
+                        html: '<h2>Dernières Ordonnances</h2>'
+                    },
+                    {
+                        title: 'Ordonnances',
+                        width: '100%',
+                        height: '210px',
+                        xtype: 'list',
+                        store: 'Ordonnances',
+                        cls: 'product-list',
+                        infinite: false,
+                        action: 'listeordonnance',
+                        itemTpl: '<div class="list-item {PrioriteCss}">'+
+                        '<div class="list-item-col">' +
+                        '<img src="'+backapp.utils.Config.getDomain()+'/{Image}.mini.60x60.jpg" class="float-left product-avatar" alt="img">'+
+                        '<h3>{Date}</h3>'+
+                        '<h2>{Nom} {Prenom}</h2>'+
+                        '<div>{Adresse} {CodPos} {Ville}</div>'+
+                        '<div>{Tel} {Email}</div>'+
+                        '</div>'+
+                        '<div class="list-item-col">' +
+                        '<div><b>Commentaires:</b> <br/>{Commentaire}</div>'+
+                        '</div>'+
+                        '<div class="list-item-col">' +
+                        '{EtatText}'+
+                        '</div>'+
+                        '</div>',
+                        grouped: false,
+                        pinHeaders: false
                     }
                 ]
             }
         ],
         listeners: {
             initialize: function(item){
-
+                var me = this;
                 //initialisation du menu
                 var leftmenu = Ext.create('Ext.Panel', {
                     id: 'sidemenu',
@@ -173,51 +219,63 @@ Ext.define('backapp.view.Main', {
 
                 //ouverture du menu à l'initialisation
                 backapp.utils.Config.showMenu();
+
+                var commandes = Ext.getStore('Commandes'),
+                    ordonnances = Ext.getStore('Ordonnances');
+
+                commandes.on('load',function () {
+                    me.refreshData();
+                },this);
+
+                ordonnances.on('load',function () {
+                    me.refreshData();
+                },this);
             }
-        },
-        refreshData: function () {
-            //Définition des commandes
-            var commandes = Ext.getStore('Commandes'),
-                commande_input = this.down('[action=commandes-info]'),
-                tab_commande = [],
-                panier_encours = [];
+        }
+    },
+    refreshData: function () {
+        //Définition des commandes
+        var commandes = Ext.getStore('Commandes'),
+            commande_input = this.down('[action=menu-commande]'),
+            commandes_actives = 0,
+            commandes_urgences = 0;
 
-            //recherche des commandes
-            commandes.findBy(function (record){
-                if (!record.get('Cloture')){
-                    if (record.get('Valide'))
-                        tab_commande.push(record);
-                    else
-                        panier_encours.push(record);
-                }
-            });
-
-            //mise à jour des contenus
-            if (tab_commande.length==0){
-                commande_input.setHtml('<div>Il n\'y a pas de commande en cours.</div>');
-            }else{
-                commande_input.setHtml('<div>Il y a '+tab_commande.length+' commande(s) en cours.</div>');
+        //recherche des commandes
+        commandes.findBy(function (record){
+            if (!record.get('Cloture')){
+                if (record.get('Valide'))
+                    commandes_actives++;
+                if (record.get('Priorite')>=40)
+                    commandes_urgences++;
             }
+        });
 
-            //Définition des ordonnances
-            var ordonnances = Ext.getStore('Ordonnances'),
-                ordonnances_input = this.down('[action=ordonnances-info]'),
-                tab_ordonnance = [];
+        commande_input.setHtml('Il y a '+commandes_actives+' commande(s) en cours.<br /> et '+commandes_urgences+' à traiter');
+        commande_input.setBadgeText(commandes_urgences);
+        commande_input.removeCls('danger');
+        if (commandes_urgences>0)commande_input.addCls('danger');
 
-            //recherche des commandes
-            ordonnances.findBy(function (record){
-                if (record.get('Etat')<4){
-                    tab_ordonnance.push(record);
-                }
-            });
+        //Définition des ordonnances
+        var ordonnances = Ext.getStore('Ordonnances'),
+            ordonnances_input = this.down('[action=menu-ordonnance]'),
+            ordonnances_actives = 0,
+            ordonnances_urgences = 0;
 
-            //mise à jour des contenus
-            if (tab_ordonnance.length==0){
-                ordonnances_input.setHtml('<div>Il n\'y a pas d\'ordonnance en cours.</div>');
-            }else{
-                ordonnances_input.setHtml('<div>Il y a '+tab_ordonnance.length+' ordonnance(s) en cours.</div>');
+        //recherche des commandes
+        ordonnances.findBy(function (record){
+            if (record.get('Etat')<4){
+                ordonnances_actives++;
             }
+            if (record.get('Priorite')>=40){
+                ordonnances_urgences++;
+            }
+        });
 
+        ordonnances_input.setHtml('Il y a '+ordonnances_actives+' ordonnance(s) en cours.<br /> et '+ordonnances_urgences+' à traiter');
+        ordonnances_input.removeCls('danger');
+        ordonnances_input.setBadgeText(ordonnances_urgences);
+        if (ordonnances_urgences>0){
+            ordonnances_input.addCls('danger');
         }
     }
 });

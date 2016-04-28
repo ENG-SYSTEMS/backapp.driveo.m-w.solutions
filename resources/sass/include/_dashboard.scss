@@ -1,0 +1,55 @@
+.driveo-case.fa {
+  height: 120px;
+  text-align: center;
+  color: #333 !important;
+  font-size: 1.2em;
+  line-height: 1.4;
+  border:0;
+}
+.driveo-case:before{
+  font-size: 50px !important;
+  color: #333 ! important;
+}
+.driveo-case.text{
+  color: white! important;
+  padding: 10px;
+}
+.driveo-case .x-badge{
+  padding: 2px 10px 10px;
+  border-radius: 20px;
+  width: 33px;
+  height: 33px;
+  margin: 10px;
+  font-size: 15px;
+  color: #333;
+  background-color: #f3f3f3;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 13px #fff;
+}
+.driveo-case.text h1{
+  color: white! important;
+}
+.driveo-case.info,.driveo-case.success,.driveo-case.warning,.driveo-case.danger,
+.driveo-case.info:before,.driveo-case.success:before,.driveo-case.warning:before,.driveo-case.danger:before{
+  color: white !important;
+}
+.driveo-case.info:before,.driveo-case.success:before,.driveo-case.warning:before,.driveo-case.danger:before{
+  font-family: "FontAwesome";
+}
+.driveo-case.info,.driveo-case.success,.driveo-case.warning,.driveo-case.danger{
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.prom-title,.prom-price{
+  box-shadow: 0 0 10px #666;
+  padding: 10px;
+  font-size: 12px;
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold;
+  margin: 10px;
+}
+.prom-price{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}

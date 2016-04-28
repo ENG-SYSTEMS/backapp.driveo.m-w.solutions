@@ -53,11 +53,20 @@ Ext.define('backapp.view.Commande', {
                         cls: 'product-list',
                         infinite: false,
                         action: 'listecommande',
-                        itemTpl: '<div class="product">'+
-                        '<span class="product-dist product-near">{MontantTTC} € TTC</span>'+
-                        '<h2>{RefCommande}  {Nom} {Prenom}</h2>'+
-                        '{Etat}'+
-                        '<span class="">{DateCommande}</span>'+
+                        itemTpl: '<div class="list-item {PrioriteCss}">'+
+                            '<div class="list-item-col">' +
+                                '<h3>{DateCommande} {RefCommande}</h3>'+
+                                '<h2>{Nom} {Prenom}</h2>'+
+                                '<div>{Adresse} {CodePostal} {Ville}</div>'+
+                                '<div>{Tel} {Mail}</div>'+
+                            '</div>'+
+                            '<div class="list-item-col">' +
+                                '<div><b>Commentaires:</b> <br/>{Commentaire}</div>'+
+                            '</div>'+
+                            '<div class="list-item-col">' +
+                                '<div class="list-item-right">{Etat}</div>'+
+                                '<div class="list-item-right"><span class="label success">{MontantTTC} € TTC</span></div>'+
+                            '</div>'+
                         '</div>',
                         grouped: false,
                         pinHeaders: false,

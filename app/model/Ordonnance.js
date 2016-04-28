@@ -12,19 +12,23 @@ Ext.define('backapp.model.Ordonnance', {
             {name: 'Telephone', type: 'string'},
             {name: 'Adresse', type: 'string'},
             {name: 'CodPos', type: 'string'},
+            {name: 'Ville', type: 'string'},
             {name: 'Image', type: 'string'},
             {name: 'Commentaire', type: 'string'},
             {name: 'Etat', type: 'int'},
             {name: 'Priorite', type: 'int'},
-            {name: 'PorioriteCss', type: 'int', convert: function (value,record) {
-                var t = record.get('Priorite');
-                if (t>10 && t<50)
+            {name: 'PrioriteCss', type: 'int', convert: function (value,record) {
+                var t = parseInt(record.get('Priorite'));
+                if (t>20 && t<50)
                     return 'warning';
                 if (t>=50)
                     return 'danger';
-                if (t==10)
-                    return 'success';
-                return '';
+                if (t<=20&&t>10)
+                    return 'info';
+                if (t>0&&t<=10)
+                    return 'info';
+                if (t<=0)
+                    return 'disabled';
             }},
             {name: 'EtatText', type: 'string', convert: function (value,record){
                 switch (record.get('Etat')) {

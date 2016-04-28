@@ -110,12 +110,13 @@ Ext.define('backapp.view.FicheCommande', {
         this.down('[action=commandetitle]').setTitle(record.get('RefCommande'));
         this.down('[action=detailcommande]').setHtml('<div class="product">'+
             '<span class="product-dist product-near warning">Montant total: '+record.get('MontantTTC')+' € TTC</span>'+
+            '<div class="list-item-right">'+record.get('Etat')+'</div>'+
             '<h1>'+record.get('Nom')+' '+record.get('Prenom')+'</h1><p>'+
-            '<b>Tel: '+record.get('Telephone')+'</b><br/>'+
-            '<b>Email: '+record.get('Email')+'</b><br/>'+
-            '<b>Adresse: '+record.get('Adresse')+'</b><br/>'+
-            '<b>'+record.get('CodPos')+' '+record.get('Ville')+'</b><br/>'+
-            '<b>Date: '+record.get('Date')+'</b></p></div>');
+            'Tel: '+record.get('Telephone')+'<br/>'+
+            'Email: '+record.get('Mail')+'<br/>'+
+            'Adresse: '+record.get('Adresse')+'<br/>'+
+            ''+record.get('CodePostal')+' '+record.get('Ville')+'<br/>'+
+            '<b>Date: '+record.get('DateCommande')+'</b></p></div>');
         this.down('[action=commandeId]').setValue(record.get('id'));
 
         //redefinition du store PANIER
@@ -129,17 +130,16 @@ Ext.define('backapp.view.FicheCommande', {
         });
 
         //modification de l'état des boutons
-        if (record.get('Prepare')||record.get('Cloture')||record.get('Expedie'))
+        this.down('[action=commandePrepare]').setHidden(false);
+        this.down('[action=commandeRetire]').setHidden(false);
+        this.down('[action=commandeCloture]').setHidden(false);
+
+        if (record.get('Prepare'))
             this.down('[action=commandePrepare]').setHidden(true);
-        else if (record.get('Expedie')||record.get('Cloture'))
+        if (record.get('Expedie'))
             this.down('[action=commandeRetire]').setHidden(true);
-        else if (record.get('Cloture'))
+        if (record.get('Cloture'))
             this.down('[action=commandeCloture]').setHidden(true);
-        else {
-            this.down('[action=commandePrepare]').setHidden(false);
-            this.down('[action=commandeRetire]').setHidden(false);
-            this.down('[action=commandeCloture]').setHidden(false);
-        }
 
         //chargement des store
         dc.load();

@@ -1,6 +1,6 @@
 /*
-violet: #8d188f
-vert: #80cc28
+violet: #d9534f
+vert: #5cb85c
 */
 .header{
     height: 61px;
@@ -12,8 +12,8 @@ vert: #80cc28
     position:relative;
     z-index: 999999;
     transition: all 350ms ease-in-out;
-  /*  background-color: #8d188f;*/
-    background-color: #8d188f;
+  /*  background-color: #d9534f;*/
+    background-color: #d9534f;
 
 /*    border-left: solid 1px rgba(255,255,255,0.05);
     border-right: solid 1px rgba(255,255,255,0.05);*/
@@ -35,5 +35,5 @@ vert: #80cc28
 }
 .header.top{
   background-color: #3E4144;
-  border-bottom: 5px solid #80cc28;
+  border-bottom: 5px solid #5cb85c;
 }

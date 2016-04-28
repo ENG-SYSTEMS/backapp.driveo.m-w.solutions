@@ -31,7 +31,7 @@
     margin-bottom:5px;
     position:relative;
   /*border-bottom: 5px solid #0097A7;*/
-  border-bottom: 5px solid #8d188f;
+  border-bottom: 5px solid #d9534f;
     padding:10px 60px 10px 10px;
     height: 65px;
 }
@@ -55,11 +55,11 @@
 .product-search-form > form > input {font-size:15px;display:inline-block;float:left;height:30px;margin:5px;padding-left:8px;width:calc(100% - 41px)}
 .product-search-form > form > button {font-size:20px;display:inline-block;float:right;margin:0px;padding:5px;width:30px;height:40px}
 
-.product-list {padding-top:5px}
 .product-list  .product > .product-avatar{width:60px;height:60px}
 .product > h2 {font-weight: 600;font-size: 12px;margin-bottom: 2px;  min-height: 20px;}
 .product > .product-address{font-size: 12px;font-family: 'Roboto', sans-serif;font-weight: 300;color:#1f1f1f}
-.product-dist{    display: inline-block;
+.product-dist{
+  display: inline-block;
   float: right;
   font-weight: 700;
   color: #fff;
@@ -69,7 +69,7 @@
   margin-top: 12px;
   font-size: 14px;
   border-radius: 5px;}
-.product-near{background-color: #80cc28;color:#fff}
+.product-near{background-color: #5cb85c;color:#fff}
 .product > .product-far{background-color: #F39C12;}
 .product > .product-very-far{background-color: #C0392B;}
 .product > .product-hours{display: inline-block;float:right;color: #333;font-size: 16px;font-weight: 600}

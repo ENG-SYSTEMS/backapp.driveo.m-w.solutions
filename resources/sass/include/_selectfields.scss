@@ -1,5 +1,5 @@
 .x-picker .x-docked-top{
-    background-color: #EA5A8F;
+    background-color: #f0ad4e;
     box-shadow: 0px 10px 20px 0px #cfcfcf;
 }
 
@@ -9,7 +9,7 @@
   transition: all 200ms ease;
   transform: scale(1,1);
   -webkit-transform: scale(1,1);
-  background-color: #8d188f;
+  background-color: #d9534f;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -17,7 +17,7 @@
 }
 .x-picker .x-button:hover{
   color: #f4f4f4!important;
-  background-color: #8d188f;
+  background-color: #d9534f;
 }
 
 .x-picker .x-dock-body{
@@ -34,7 +34,7 @@
 }
 .x-picker-slot .x-dataview-item.x-item-selected {
   font-weight: bold;
-  background-color: #8d188f;
+  background-color: #d9534f;
   color: white;
   margin: 5px;
   border-radius: 10px;

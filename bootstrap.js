@@ -794,6 +794,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "backapp.utils.LoadMaskCustom": [],
   "backapp.utils.Notification": [],
   "backapp.utils.PinchZoomImage": [],
+  "backapp.utils.ScrollZoomImage": [],
   "backapp.utils.Slot": [
     "Ext.Picker.Slot"
   ],
@@ -1798,6 +1799,9 @@ Ext.ClassManager.addNameAliasMappings({
   "backapp.utils.Notification": [],
   "backapp.utils.PinchZoomImage": [
     "widget.pinchzoomimage"
+  ],
+  "backapp.utils.ScrollZoomImage": [
+    "widget.scrollzoomimage"
   ],
   "backapp.utils.Slot": [
     "widget.pickerslot"

@@ -21,6 +21,7 @@
  * @APPPLANT_LICENSE_HEADER_END@
  */
 
+#import "APPAppEventDelegate.h"
 #import "CDVPlugin+APPAppEvent.h"
 #import "AppDelegate+APPAppEvent.h"
 
@@ -39,10 +40,12 @@ static IMP orig_pluginInitialize;
  */
 + (void) initialize
 {
-    if ([NSStringFromClass(self) hasPrefix:@"CDV"])
-        return;
+    // To keep compatibility with local-notifiations v0.8.4
+    if ([NSStringFromClass(self) isEqualToString:@"APPLocalNotification"]
+        || [self conformsToProtocol:@protocol(APPAppEventDelegate)]) {
 
-    orig_pluginInitialize = [self exchange_init_methods];
+        orig_pluginInitialize = [self exchange_init_methods];
+    }
 }
 
 #pragma mark -
@@ -83,15 +86,19 @@ void swizzled_pluginInitialize(id self, SEL _cmd)
     IMP swizzleImp = (IMP) swizzled_pluginInitialize;
     Method origImp = class_getInstanceMethod(self, @selector(pluginInitialize));
 
-    return method_setImplementation(origImp, swizzleImp);
+    if (method_getImplementation(origImp) != swizzleImp) {
+        return method_setImplementation(origImp, swizzleImp);
+    }
+
+    return NULL;
 }
 
 /**
  * Register an observer if the caller responds to it.
  */
 - (void) addObserver:(SEL)selector
-                name:(nullable NSString*)event
-              object:(nullable id)object
+                name:(NSString*)event
+              object:(id)object
 {
     if (![self respondsToSelector:selector])
         return;
